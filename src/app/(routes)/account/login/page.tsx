@@ -1,9 +1,10 @@
 import React from 'react'
+import '/home/vare/project/farm_varels/frontend/src/app/(routes)/account/login/login.css'
 
 const page = () => {
   return (
-    <div>
-        <div className="d-none d-md-block">
+    <div className=''>
+        <div className="d-none d-md-block ">
             <div className="js-alert-added-to-cart notification-floating notification-cart-container notification-hidden notification-fixed position-absolute position-fixed-md" style={{"display":"none","top":"93px","margin-top":"-1px"}}>
             <div className="notification notification-primary notification-cart p-0">
                 <div className="js-cart-notification-close notification-close">
@@ -13,7 +14,7 @@ const page = () => {
                 </div>
                 <div className="js-cart-notification-item row no-gutters align-items-center" data-store="cart-notification-item">
                 <div className="col-auto pr-0 notification-img">
-                    <img src className="js-cart-notification-item-img img-absolute-centered-vertically" />
+                    <img className="js-cart-notification-item-img img-absolute-centered-vertically" />
                 </div>
                 <div className="col text-left pl-2 pr-4 font-body">
                     <div className="mb-1 mr-2 text-transform font-weight-bold">
@@ -32,6 +33,7 @@ const page = () => {
             </div>
             </div>
         </div>
+
         <div id="nav-search" className="js-modal modal modal-nav-search modal-fade modal- modal--md transition-slide modal- transition-soft" style={{"display":"none"}}>
             <div className="modal-header">
             <div className="row no-gutters align-items-center">
@@ -57,6 +59,7 @@ const page = () => {
             <div className="js-search-form-suggestions search-suggestions position-relative mt-5 w-100" style={{"display":"none"}} />
             </div>
         </div>
+
         <div id="nav-hamburger" className="js-modal modal modal-nav-hamburger modal-docked-md pb-0 modal-left modal-left-md transition-slide modal-full transition-soft" style={{"display":"none"}}>
             <div className="modal-with-fixed-footer">
             <div className="modal-scrollable-area">
@@ -119,6 +122,7 @@ const page = () => {
                             </div>
                             </div>
                         </div>
+
                         <div className="modal-body p-0">
                             <li className="nav-item py-1">
                             <a className="nav-list-link position-relative font-body py-3" href="https://barnesindustries.com.ar/productos/">
@@ -297,15 +301,20 @@ const page = () => {
                             <a className="nav-list-link" href="https://barnesindustries.com.ar/gift-card1/">Gift Cards</a>
                             </li>
                         </div>
+
                         </ul>
+                        
                     </li>
+
                     <li className="js-desktop-nav-item nav-item" data-component="menu.item">
                         <a className="nav-list-link" href="https://barnesindustries.com.ar/sale/">SALE</a>
                     </li>
+
                     </ul>
                 </div>
                 </div>
             </div>
+
             <div className="modal-footer text-right hamburger-footer mb-0 p-0">
                 <div className="d-block d-md-none">
                 <div className="nav-secondary text-left" data-store="account-links">
@@ -321,7 +330,9 @@ const page = () => {
             </div>
             </div>
         </div>
+        
         <div className="js-modal-overlay modal-overlay" data-modal-id="#nav-hamburger" style={{"display":"none"}} />
+        
         <div id="modal-cart" className="js-modal js-fullscreen-modal modal modal-cart modal-right modal-right-md transition-slide modal-docked-md transition-soft" style={{"display":"none"}} data-component="cart">
             <form action="/comprar/" method="post" className="js-ajax-cart-panel h-100" data-store="cart-form">
             <div className="js-modal-close js-fullscreen-modal-close modal-header">
@@ -587,68 +598,77 @@ const page = () => {
             </div>
             </form>
         </div>
+
         <div className="js-modal-overlay modal-overlay" data-modal-id="#modal-cart" style={{"display":"none"}} />
-        <div className="container">
-            <section className="page-header py-4" data-store="page-title">
-            <div className="breadcrumbs">
-                <a className="crumb" href="https://barnesindustries.com.ar" title="Barnes Industries">Inicio</a>
-                <span className="separator">|</span>
-                <a className="crumb" href="/account" title="Mi Cuenta">Mi Cuenta</a>
-                <span className="separator">|</span>
-                <span className="crumb active">Login</span>
-            </div>
-            <h1 className="h3-huge h1-huge-md">Iniciar sesión</h1>
+
+        <div className="container ">
+            <section className="page-header py-4 " data-store="page-title">
+                <div className="breadcrumbs">
+                    <a className="crumb" href="https://barnesindustries.com.ar" title="Barnes Industries">Inicio</a>
+                    <span className="separator">|</span>
+                    <a className="crumb" href="/account" title="Mi Cuenta">Mi Cuenta</a>
+                    <span className="separator">|</span>
+                    <span className="crumb active">Login</span>
+                </div>
+                <h1 className="h3-huge h1-huge-md">Iniciar sesión</h1>
             </section>
         </div>
-        <section className="account-page mb-4">
+
+        <section className="account-page mb-4 login_form">
             <div className="container">
-            <div className="row">
-                <div className="col-md-5">
-                <div className="js-resend-validation-success mb-4" style={{"display":"none"}}>
-                    <div className="alert alert-success">
-                    ¡El link fue enviado correctamente!
+                <div className="row">
+
+                    <div className="col-md-5">
+                        <div className="js-resend-validation-success mb-4" style={{"display":"none"}}>
+                            <div className="alert alert-success">
+                            ¡El link fue enviado correctamente!
+                            </div>
+                        </div>
+                        <div className="js-resend-validation-error mb-4" style={{"display":"none"}}>
+                            <div className="alert alert-danger">
+                            No pudimos enviar el email, intentalo de nuevo en unos minutos.
+                            </div>
+                        </div>
+                            
+                        <div className="js-too-many-attempts alert alert-danger mb-4" style={{"display":"none"}}>
+                            Superaste la cantidad de intentos permitidos. Volvé a probar en
+                            <span className="js-too-many-attempts-countdown" />
+                        </div>
+
+                        <form method="post" data-store="account-login">
+                            <div >
+                            <label className="form-label" htmlFor="email">Email</label>
+                            <input type="email" name="email"  autoCorrect="off" autoCapitalize="off" className="js-account-input form-control" required placeholder="ej.: tuemail@email.com" />
+                            </div>
+
+                            <div className="form-group">
+                            <label className="form-label" htmlFor="password">Contraseña</label>
+                            <input type="password" name="password" autoCorrect="off" autoCapitalize="off" autoComplete="off" className="js-account-input js-password-input form-control" required placeholder="ej.: tucontraseña" />
+                            <a aria-label="Ver contraseña" className="js-password-toggle password-toggle btn">
+                                <span className="js-password-visible password-toggle-show" style={{"display":"none"}}>
+                                Ocultar
+                                </span>
+                                <span className="js-password-hidden password-toggle-hide">
+                                Mostrar
+                                </span>
+                            </a>
+                            <div className="text-right mt-2 mb-2">
+                                <a href="/account/reset" className="btn-link font-small mb-2 mr-1">¿Olvidaste tu contraseña?</a>
+                            </div>
+                            </div>
+
+                            <button className="btn btn-primary btn-big btn-block mb-3" type="submit" value="Iniciar sesión" >
+                                Iniciar sesión
+                                <span className="js-form-spinner form-spinner icon-inline icon-spin svg-icon-mask ml-2" style={{"display":"none"}} />
+                            </button>
+
+                            <div className="mt-2 mb-2 text-center font-small">
+                            ¿No tenés cuenta aún?
+                            <a href="/account/register" className="btn-link btn-link font-small mb-2 ml-1">Crear cuenta</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div className="js-resend-validation-error mb-4" style={{"display":"none"}}>
-                    <div className="alert alert-danger">
-                    No pudimos enviar el email, intentalo de nuevo en unos minutos.
-                    </div>
-                </div>
-                <div className="js-too-many-attempts alert alert-danger mb-4" style={{"display":"none"}}>
-                    Superaste la cantidad de intentos permitidos. Volvé a probar en
-                    <span className="js-too-many-attempts-countdown" />
-                </div>
-                <form id="login-form" action method="post" className="js-form form" data-store="account-login">
-                    <div className="form-group">
-                    <label className="form-label" htmlFor="email">Email</label>
-                    <input type="email" name="email" defaultValue autoCorrect="off" autoCapitalize="off" className="js-account-input form-control" required placeholder="ej.: tuemail@email.com" />
-                    </div>
-                    <div className="form-group">
-                    <label className="form-label" htmlFor="password">Contraseña</label>
-                    <input type="password" name="password" autoCorrect="off" autoCapitalize="off" autoComplete="off" className="js-account-input js-password-input form-control" required placeholder="ej.: tucontraseña" />
-                    <a aria-label="Ver contraseña" className="js-password-toggle password-toggle btn">
-                        <span className="js-password-visible password-toggle-show" style={{"display":"none"}}>
-                        Ocultar
-                        </span>
-                        <span className="js-password-hidden password-toggle-hide">
-                        Mostrar
-                        </span>
-                    </a>
-                    <div className="text-right mt-2 mb-2">
-                        <a href="/account/reset" className="btn-link font-small mb-2 mr-1">¿Olvidaste tu contraseña?</a>
-                    </div>
-                    </div>
-                    <button className="btn btn-primary btn-big btn-block mb-3" type="submit" value="Iniciar sesión" name>
-                    Iniciar sesión
-                    <span className="js-form-spinner form-spinner icon-inline icon-spin svg-icon-mask ml-2" style={{"display":"none"}} />
-                    </button>
-                    <div className="mt-2 mb-2 text-center font-small">
-                    ¿No tenés cuenta aún?
-                    <a href="/account/register" className="btn-link btn-link font-small mb-2 ml-1">Crear cuenta</a>
-                    </div>
-                </form>
-                </div>
-            </div>
             </div>
         </section>
     </div>

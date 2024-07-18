@@ -7,6 +7,7 @@ import MainStyles from '../app/_styles/MainStyles.jsx'
 
 import "../app/_styles/async.css"
 import "../app/_styles/critical.css"
+import React from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 

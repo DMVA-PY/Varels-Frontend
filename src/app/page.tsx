@@ -3,6 +3,7 @@ import React from 'react'
 const page = () => {
   return (
     <div>
+
         {/* Main-1 */}
         <section
           className="section-home-color is-inViewport"
@@ -75,6 +76,7 @@ const page = () => {
             </div>
           </div>
         </section>
+
         {/* Second-2 */}
         <section
           className="section-home section-banners-home position-relative overflow-none section-home-color p-0"
@@ -152,6 +154,7 @@ const page = () => {
           </div>
 
         </section>
+
         {/* Third-3 */}
         <section
           className="section-home section-featured-home section-featured-products-home"
@@ -1946,7 +1949,8 @@ const page = () => {
             </div>
           </div>
         </section>
-        {/* Fourth-4 */}
+
+        {/* Fourth-4 */}    
         <section
           className="section-home section-banners-home position-relative overflow-none section-home-color p-0"
           data-store="home-banner-categories"
@@ -2005,6 +2009,7 @@ const page = () => {
             </div>
           </div>
         </section>
+
         {/* Fifth-5 */}
         <section
           className="section-home section-featured-home section-new-products-home"
@@ -2649,6 +2654,7 @@ const page = () => {
                             data-store="stock-product-210682520-58"
                           />
                         </div>
+
                         <div className="js-item-variants hidden">
                           <form
                             className="js-product-form"
@@ -2802,6 +2808,7 @@ const page = () => {
                             </div>
                           </form>
                         </div>
+
                         <div
                           className="item-description pt-3"
                           data-store="product-item-info-210682520"
@@ -2864,6 +2871,7 @@ const page = () => {
                             </div>
                           </a>
                         </div>
+
                       </div>
                     </div>
                   </div>
@@ -2872,6 +2880,7 @@ const page = () => {
             </div>
           </div>
         </section>
+
         {/* Sixth-6 */}
         <section
           className="section-home section-banners-home position-relative overflow-none section-home-color p-0"
@@ -2902,6 +2911,7 @@ const page = () => {
             </div>
           </div>
         </section>
+        
     </div>
   )
 }

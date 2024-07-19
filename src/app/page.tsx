@@ -75,6 +75,7 @@ const page = () => {
               </div>
             </div>
           </div>
+          
         </section>
 
         {/* Second-2 */}
@@ -86,6 +87,7 @@ const page = () => {
 
           <div className="container-fluid p-0 overflow-none">
             <div className="row no-gutters">
+
               <div className="col-grid col-md-6">
                 <div className="textbanner m-0">
                   <a
@@ -118,6 +120,7 @@ const page = () => {
                   </a>
                 </div>
               </div>
+
               <div className="col-grid col-md-6">
                 <div className="textbanner m-0">
                   <a
@@ -150,6 +153,7 @@ const page = () => {
                   </a>
                 </div>
               </div>
+
             </div>
           </div>
 
@@ -162,6 +166,7 @@ const page = () => {
         >
           <div className="container-fluid">
             <div className="row">
+
               <div className="col-md-3">
                 <div className="js-swiper-featured-pagination swiper-pagination-fraction d-block d-md-none" />
                 <h2 className="section-title mb-0 h4-huge h3-huge-md">
@@ -180,9 +185,12 @@ const page = () => {
                   </div>
                 </div>
               </div>
+
               <div className="col-md-9">
                 <div className="js-swiper-featured swiper-container">
+
                   <div className="swiper-wrapper swiper-mobile-only flex-nowrap flex-md-wrap row row-grid">
+
                     <div
                       className="js-item-product js-item-slide swiper-slide col-12 col-md-4 item-product col-grid"
                       data-product-type="list"
@@ -472,6 +480,7 @@ const page = () => {
                         </div>
                       </div>
                     </div>
+
                     <div
                       className="js-item-product js-item-slide swiper-slide col-12 col-md-4 item-product col-grid"
                       data-product-type="list"
@@ -626,6 +635,7 @@ const page = () => {
                                   </a>
                                 </div>
                               </div>
+
                               <div className="row mt-3">
                                 <div className="col-4">
                                   <div className="form-group js-quantity form-quantity">
@@ -694,7 +704,9 @@ const page = () => {
                                 </div>
                               </div>
                             </form>
+
                           </div>
+
                           <div
                             className="item-description pt-3"
                             data-store="product-item-info-211048292"
@@ -757,9 +769,11 @@ const page = () => {
                               </div>
                             </a>
                           </div>
+
                         </div>
                       </div>
                     </div>
+
                     <div
                       className="js-item-product js-item-slide swiper-slide col-12 col-md-4 item-product col-grid"
                       data-product-type="list"
@@ -1048,6 +1062,7 @@ const page = () => {
                         </div>
                       </div>
                     </div>
+
                     <div
                       className="js-item-product js-item-slide swiper-slide col-12 col-md-4 item-product col-grid"
                       data-product-type="list"
@@ -1351,6 +1366,7 @@ const page = () => {
                         </div>
                       </div>
                     </div>
+
                     <div
                       className="js-item-product js-item-slide swiper-slide col-12 col-md-4 item-product col-grid"
                       data-product-type="list"
@@ -1640,6 +1656,7 @@ const page = () => {
                         </div>
                       </div>
                     </div>
+
                     <div
                       className="js-item-product js-item-slide swiper-slide col-12 col-md-4 item-product col-grid"
                       data-product-type="list"
@@ -1943,9 +1960,12 @@ const page = () => {
                         </div>
                       </div>
                     </div>
+
                   </div>
+
                 </div>
               </div>
+
             </div>
           </div>
         </section>

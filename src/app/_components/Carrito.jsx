@@ -6,7 +6,7 @@ const Carrito = ({isCarritoVisible, setIsCarritoVisible, toggleCarritoVisibility
         <>
             {/* CARRITO DESK */}
             <div
-                className='js-modal-open js-fullscreen-modal-open btn btn-utility d-flex pr-0'
+                /* className='js-modal-open js-fullscreen-modal-open btn btn-utility d-flex pr-0' */
                 className="js-utility-col col-auto col-utility desktop-utility-col order-last"
                 style={{ visibility: "visible", height: "auto" }}
             >

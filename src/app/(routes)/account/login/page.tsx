@@ -1,5 +1,5 @@
 import React from 'react'
-import '/home/vare/project/farm_varels/frontend/src/app/(routes)/account/login/login.css'
+import '/home/vare/project/farm_varels/Varels-Frontend/src/app/(routes)/account/login/login.css'
 
 const page = () => {
   return (

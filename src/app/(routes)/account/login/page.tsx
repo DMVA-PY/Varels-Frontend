@@ -614,10 +614,12 @@ const page = () => {
             </section>
         </div>
 
+        {/* form section */}
         <section className="account-page mb-4 login_form">
             <div className="container">
                 <div className="row">
 
+                    {/* messages */}
                     <div className="col-md-5">
                         <div className="js-resend-validation-success mb-4" style={{"display":"none"}}>
                             <div className="alert alert-success">

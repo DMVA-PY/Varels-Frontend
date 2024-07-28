@@ -617,15 +617,17 @@ const page = () => {
         {/* form section */}
         <section className="account-page mb-4 login_form">
             <div className="container">
-                <div className="row">
+                <div className="row-page">
 
-                    {/* messages */}
+                    {/* form && messages */}
                     <div className="col-md-5">
+
                         <div className="js-resend-validation-success mb-4" style={{"display":"none"}}>
                             <div className="alert alert-success">
                             ¡El link fue enviado correctamente!
                             </div>
                         </div>
+
                         <div className="js-resend-validation-error mb-4" style={{"display":"none"}}>
                             <div className="alert alert-danger">
                             No pudimos enviar el email, intentalo de nuevo en unos minutos.
@@ -637,14 +639,33 @@ const page = () => {
                             <span className="js-too-many-attempts-countdown" />
                         </div>
 
+                
                         <form method="post" data-store="account-login">
                             <div >
-                            <label className="form-label" htmlFor="email">Email</label>
-                            <input type="email" name="email"  autoCorrect="off" autoCapitalize="off" className="js-account-input form-control" required placeholder="ej.: tuemail@email.com" />
+                            {/* EMAIL */}
+                            <label 
+                                className="form-label" 
+                                htmlFor="email">
+                                Email
+                            </label>
+
+                            <input 
+                            type="email" 
+                            name="email"  
+                            autoCorrect="off"
+                            autoCapitalize="off" 
+                            className="js-account-input form-control" 
+                            required placeholder="ej.: tuemail@email.com" />
                             </div>
 
+                            {/* PASSWORD */}
                             <div className="form-group">
-                            <label className="form-label" htmlFor="password">Contraseña</label>
+                            <label 
+                                className="form-label" 
+                                htmlFor="password">
+                                Contraseña
+                            </label>
+
                             <input type="password" name="password" autoCorrect="off" autoCapitalize="off" autoComplete="off" className="js-account-input js-password-input form-control" required placeholder="ej.: tucontraseña" />
                             <a aria-label="Ver contraseña" className="js-password-toggle password-toggle btn">
                                 <span className="js-password-visible password-toggle-show" style={{"display":"none"}}>

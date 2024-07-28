@@ -4,10 +4,10 @@ import { Inter } from "next/font/google";
 import Header from '../app/_components/Header.jsx'
 import Footer from '../app/_components/Footer.jsx'
 import MainStyles from '../app/_styles/MainStyles.jsx'
-
 import "../app/_styles/async.css"
 import "../app/_styles/critical.css"
 import React from "react";
+import Provider from './redux/provider';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,10 +24,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body >
-        <MainStyles/>
-        <Header/>
-        {children}
-        <Footer/> 
+        <Provider>
+          <MainStyles/>
+          <Header/>
+          {children}
+          <Footer/> 
+        </Provider>
       </body>
     </html>
   );

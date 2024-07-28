@@ -21,16 +21,19 @@ html, body {
 }
 
 /* Flexbox container */
-.account-page {
+.account-pagee {
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
 }
 
 /* Center the form within the row */
-.row-page {
+.roww {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+.container-register {
+    background-color: white;
 }

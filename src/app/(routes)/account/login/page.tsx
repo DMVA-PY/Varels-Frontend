@@ -611,19 +611,20 @@ const page = () => {
             </form>
         </div>
 
-{/* 6 */}
+        {/* 6 */}
         <div className="js-modal-overlay modal-overlay" data-modal-id="#modal-cart" style={{"display":"none"}} />
+
         {/* 7 */}
-        <div className="login-container-2">
-            <section className="page-header py-4 " data-store="page-title">
-                <div className="breadcrumbs">
-                    <Link className="crumb" href="/" title="Barnes Industries">Inicio</Link>
-                    <span className="separator">|</span>
-                    <a className="crumb" href="/account" title="Mi Cuenta">Mi Cuenta</a>
-                    <span className="separator">|</span>
-                    <span className="crumb active">Login</span>
-                </div>
-            </section>
+        <div className="container">
+          <section className="page-header py-4 " data-store="page-title">
+            <div className="breadcrumbs ">
+              <Link href='/' className="crumb" title="Barnes Industries">Inicio</Link>
+              <span className="separator">|</span>
+              <a className="crumb"  title="Mi Cuenta">Mi Cuenta</a>
+              <span className="separator">|</span>
+              <span className="crumb active">Crear Cuenta</span>
+            </div>
+          </section>
         </div>
 
         {/* form section */}
@@ -654,7 +655,7 @@ const page = () => {
 
                 
                         <form method="post" data-store="account-login">
-                <h1 className="h3-huge h1-huge-md">Iniciar sesión</h1>
+                        <h1 className="h3-huge h1-huge-md">Iniciar sesión</h1>
 
                             <div >
                             {/* EMAIL */}

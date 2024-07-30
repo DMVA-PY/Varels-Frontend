@@ -602,6 +602,11 @@ html {
         max-width: 25%
     }
 
+    .col-md-22 {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%
+    }
     .col-md-4 {
         -ms-flex: 0 0 33.333333%;
         flex: 0 0 33.333333%;

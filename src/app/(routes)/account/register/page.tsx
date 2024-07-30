@@ -6,7 +6,6 @@ import { useRegisterMutation } from '@/redux/features/authApiSlice'
 import { toast } from 'react-toastify'
 import { useRouter } from 'next/navigation'
 import Spinner from '/home/vare/project/farm_varels/Varels-Frontend/src/components/common/Spinner'
-/* import '/home/vare/project/farm_varels/Varels-Frontend/src/app/(routes)/account/register/register.css' */
 
 const page = () => {
   const router = useRouter();
@@ -40,7 +39,8 @@ const page = () => {
       })
   };
   return (
-    <div className="container-register">
+    <div className="login-container">
+
         <div className="container">
           <section className="page-header py-4 " data-store="page-title">
             <div className="breadcrumbs ">
@@ -50,16 +50,17 @@ const page = () => {
               <span className="separator">|</span>
               <span className="crumb active">Crear Cuenta</span>
             </div>
-            <h1 className="h3-huge h1-huge-md ">Crear cuenta</h1>
           </section>
         </div>
 
-        <div className="account-pagee ">
-
+        <div className="smaller-container">
           <div className="container">
+            <div className="row-page">
+              
+              <div className="">
 
-            <div className="roww">
-              <div className="col-md-5">
+                <h1 className="">Crear cuenta</h1>
+
                 <div className="mb-4">Comprá más rápido y llevá el control de tus pedidos, ¡en un solo lugar!</div>
 
                 <form action="" method="post" className="already-account text-sm " data-store="account-register">
@@ -99,7 +100,17 @@ const page = () => {
 
                   <div className="form-group ">
                     <label className="form-label " htmlFor="password_confirmation">Confirmar contraseña</label>
-                    <input onChange={onChange} type="password" id="password_confirmation" name="password_confirmation" autoCorrect="off" autoCapitalize="off" autoComplete="off" className="js-account-input js-password-input form-control " required placeholder="ej.: tucontraseña" />
+                    
+                    <input 
+                      onChange={onChange} type="password" 
+                      id="password_confirmation" 
+                      name="password_confirmation" 
+                      autoCorrect="off" autoCapitalize="off" 
+                      autoComplete="off" 
+                      className="js-account-input js-password-input form-control" 
+                      required placeholder="ej.: tucontraseña" 
+                    />
+
                     <a aria-label="Ver contraseña" className="js-password-toggle password-toggle btn">
                       <span className="js-password-visible password-toggle-show" style={{display: 'none'}}>
                         Ocultar
@@ -112,7 +123,7 @@ const page = () => {
 
 
                   <button className="js-recaptcha-button btn btn-primary btn-big btn-block mb-3" type="submit" value="Crear cuenta"  disabled>
-                    {isLoading ? <Spinner sm/> : "Crear cuenta"}
+                    {isLoading ? <Spinner/> : "Crear cuenta"}
                   </button>
                   
                   <div className=" mt-2 mb-2 text-center font-small">
@@ -124,7 +135,6 @@ const page = () => {
             </div>
 
           </div>
-          
         </div>
     </div>
   )

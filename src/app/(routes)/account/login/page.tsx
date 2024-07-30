@@ -1,338 +1,350 @@
 import React from 'react'
-import '/home/vare/project/farm_varels/Varels-Frontend/src/app/(routes)/account/login/login.css'
+import '/home/vare/project/farm_varels/Varels-Frontend/src/app/(routes)/account/login/login.css' 
+import Link from 'next/link'
 
 const page = () => {
   return (
-    <div className=''>
+    <div className='login-container'>
+
+{/* 1 */}
         <div className="d-none d-md-block ">
-            <div className="js-alert-added-to-cart notification-floating notification-cart-container notification-hidden notification-fixed position-absolute position-fixed-md" style={{"display":"none","top":"93px","margin-top":"-1px"}}>
-            <div className="notification notification-primary notification-cart p-0">
-                <div className="js-cart-notification-close notification-close">
-                <svg className="icon-inline icon-2x notification-icon">
-                    <use xlinkHref="#times" />
-                </svg>
-                </div>
-                <div className="js-cart-notification-item row no-gutters align-items-center" data-store="cart-notification-item">
-                <div className="col-auto pr-0 notification-img">
-                    <img className="js-cart-notification-item-img img-absolute-centered-vertically" />
-                </div>
-                <div className="col text-left pl-2 pr-4 font-body">
-                    <div className="mb-1 mr-2 text-transform font-weight-bold">
-                    <span className="js-cart-notification-item-name" />
-                    <span className="js-cart-notification-item-variant-container" style={{"display":"none"}}>
-                        (<span className="js-cart-notification-item-variant" />)
-                    </span>
+            <div className="js-alert-added-to-cart notification-floating notification-cart-container notification-hidden notification-fixed position-absolute position-fixed-md" style={{"display":"none","top":"93px"}}>
+                <div className="notification notification-primary notification-cart p-0">
+                    <div className="js-cart-notification-close notification-close">
+                    <svg className="icon-inline icon-2x notification-icon">
+                        <use xlinkHref="#times" />  
+                    </svg>
                     </div>
-                    <div className="mb-1">
-                    <span className="js-cart-notification-item-quantity" />
-                    <span> x </span>
-                    <span className="js-cart-notification-item-price" />
+                    <div className="js-cart-notification-item row no-gutters align-items-center" data-store="cart-notification-item">
+                    <div className="col-auto pr-0 notification-img">
+                        <img className="js-cart-notification-item-img img-absolute-centered-vertically" />
+                    </div>
+
+                    <div className="col text-left pl-2 pr-4 font-body">
+                        <div className="mb-1 mr-2 text-transform font-weight-bold">
+                        <span className="js-cart-notification-item-name" />
+                        <span className="js-cart-notification-item-variant-container" style={{"display":"none"}}>
+                            (<span className="js-cart-notification-item-variant" />)
+                        </span>
+                        </div>
+                        <div className="mb-1">
+                        <span className="js-cart-notification-item-quantity" />
+                        <span> x </span>
+                        <span className="js-cart-notification-item-price" />
+                        </div>
+                    </div>
+                    
                     </div>
                 </div>
-                </div>
-            </div>
             </div>
         </div>
-
+        {/* 2 */}
         <div id="nav-search" className="js-modal modal modal-nav-search modal-fade modal- modal--md transition-slide modal- transition-soft" style={{"display":"none"}}>
             <div className="modal-header">
-            <div className="row no-gutters align-items-center">
-                <div className="col p-3 text-center" />
-                <div className="col-auto">
-                <a className="js-modal-close modal-close">
-                    <svg className="icon-inline icon-lg svg-icon-text">
-                    <use xlinkHref="#times" />
-                    </svg>
-                </a>
+                <div className="row no-gutters align-items-center">
+                    <div className="col p-3 text-center" />
+                    <div className="col-auto">
+                    <a className="js-modal-close modal-close">
+                        <svg className="icon-inline icon-lg svg-icon-text">
+                        <use xlinkHref="#times" />
+                        </svg>
+                    </a>
+                    </div>
                 </div>
             </div>
-            </div>
+
             <div className="modal-body h-100">
-            <form className="js-search-form search-form w-100" action="/search/" method="get">
-                <div className="form-group m-0">
-                <input className="js-search-input form-control search-input" autoComplete="off" type="search" name="q" placeholder="¿Qué estás buscando?" aria-label="¿Qué estás buscando?" />
-                <button type="submit" className="search-btn search-submit-btn" value="Buscar" aria-label="Buscar">
-                    Buscar
-                </button>
-                </div>
-            </form>
+                <form className="js-search-form search-form w-100" action="/search/" method="get">
+                    <div className="form-group m-0">
+                    <input className="js-search-input form-control search-input" autoComplete="off" type="search" name="q" placeholder="¿Qué estás buscando?" aria-label="¿Qué estás buscando?" />
+                    <button type="submit" className="search-btn search-submit-btn" value="Buscar" aria-label="Buscar">
+                        Buscar
+                    </button>
+                    </div>
+                </form>
             <div className="js-search-form-suggestions search-suggestions position-relative mt-5 w-100" style={{"display":"none"}} />
             </div>
         </div>
 
+        {/* 3 */}
+       
         <div id="nav-hamburger" className="js-modal modal modal-nav-hamburger modal-docked-md pb-0 modal-left modal-left-md transition-slide modal-full transition-soft" style={{"display":"none"}}>
+            
             <div className="modal-with-fixed-footer">
-            <div className="modal-scrollable-area">
-                <div className="js-modal-close modal-header modal-header-no-title js-toggle-menu-close p-3">
-                <svg className="icon-inline icon-lg svg-icon-text">
-                    <use xlinkHref="#times" />
-                </svg>
-                </div>
-                <div className="modal-body nav-body">
-                <div className="d-block d-md-none position-relative">
-                    <form className="js-search-form search-form" action="/search/" method="get">
-                    <div className="form-group m-0">
-                        <input className="js-search-input form-control search-input" autoComplete="off" type="search" name="q" placeholder="¿Qué estás buscando?" aria-label="¿Qué estás buscando?" />
-                        <button type="submit" className="search-btn search-submit-btn" value="Buscar" aria-label="Buscar">
-                        Buscar
-                        </button>
+                <div className="modal-scrollable-area">
+                    <div className="js-modal-close modal-header modal-header-no-title js-toggle-menu-close p-3">
+                    <svg className="icon-inline icon-lg svg-icon-text">
+                        <use xlinkHref="#times" />
+                    </svg>
                     </div>
-                    </form>
-                    <div className="js-search-form-suggestions search-suggestions" style={{"display":"none"}} />
-                </div>
-                <div className="nav-primary">
-                    <ul className="nav-list" data-store="navigation" data-component="menu">
-                    <li className="js-desktop-nav-item nav-item" data-component="menu.item">
-                        <a className="nav-list-link" href="/">INICIO</a>
-                    </li>
-                    <li className="js-desktop-nav-item nav-item" data-component="menu.item">
-                        <a className="nav-list-link" href="https://barnesindustries.com.ar/new-collection/">NEW COLLECTION</a>
-                    </li>
-                    <li className="nav-item item-with-subitems" data-component="menu.item">
-                        <a className="js-toggle-menu-panel align-items-center nav-list-link position-relative" href="#">PRODUCTOS
-                        <span className="nav-list-arrow ml-1">
-                            <svg className="icon-inline icon-md svg-icon-text">
-                            <use xlinkHref="#chevron" />
-                            </svg>
-                        </span>
-                        </a>
-                        <ul className="js-menu-panel nav-list-panel nav-list-panel-right nav-list-panel-left-md list-subitems" style={{"display":"none"}}>
-                        <div className="modal-header">
-                            <div className="row no-gutters">
-                            <div className="col">
-                                <a className="js-toggle-menu-back" href="#">
-                                <div className="row no-gutters align-items-center">
-                                    <div className="col-auto">
-                                    <span className="modal-back pr-2 mr-1">
-                                        <svg className="icon-inline icon-flip-horizontal svg-icon-text">
-                                        <use xlinkHref="#chevron" />
-                                        </svg>
-                                    </span>
-                                    </div>
-                                    <div className="col my-3 text-center">PRODUCTOS</div>
-                                </div>
-                                </a>
-                            </div>
-                            <div className="col-auto">
-                                <a className="js-toggle-menu-close js-modal-close modal-close">
-                                <svg className="icon-inline icon-lg modal-close-icon">
-                                    <use xlinkHref="#times" />
-                                </svg>
-                                </a>
-                            </div>
-                            </div>
-                        </div>
 
-                        <div className="modal-body p-0">
-                            <li className="nav-item py-1">
-                            <a className="nav-list-link position-relative font-body py-3" href="https://barnesindustries.com.ar/productos/">
-                                Ver todos los productos
-                            </a>
-                            </li>
-                            <li className="js-desktop-nav-item nav-item" data-component="menu.item">
-                            <a className="nav-list-link" href="https://barnesindustries.com.ar/new-collection/">NEW COLLECTION</a>
-                            </li>
-                            <li className="nav-item item-with-subitems" data-component="menu.item">
-                            <a className="js-toggle-menu-panel align-items-center nav-list-link position-relative" href="#">Abrigos
-                                <span className="nav-list-arrow ml-1">
-                                <svg className="icon-inline icon-md svg-icon-text">
-                                    <use xlinkHref="#chevron" />
-                                </svg>
-                                </span>
-                            </a>
-                            <ul className="js-menu-panel nav-list-panel nav-list-panel-right nav-list-panel-left-md list-subitems" style={{"display":"none"}}>
-                                <div className="modal-header">
-                                <div className="row no-gutters">
-                                    <div className="col">
-                                    <a className="js-toggle-menu-back" href="#">
-                                        <div className="row no-gutters align-items-center">
-                                        <div className="col-auto">
-                                            <span className="modal-back pr-2 mr-1">
-                                            <svg className="icon-inline icon-flip-horizontal svg-icon-text">
-                                                <use xlinkHref="#chevron" />
-                                            </svg>
-                                            </span>
-                                        </div>
-                                        <div className="col my-3 text-center">
-                                            Abrigos
-                                        </div>
-                                        </div>
-                                    </a>
-                                    </div>
-                                    <div className="col-auto">
-                                    <a className="js-toggle-menu-close js-modal-close modal-close">
-                                        <svg className="icon-inline icon-lg modal-close-icon">
-                                        <use xlinkHref="#times" />
-                                        </svg>
-                                    </a>
-                                    </div>
-                                </div>
-                                </div>
-                                <div className="modal-body p-0">
-                                <li className="nav-item py-1">
-                                    <a className="nav-list-link position-relative font-body py-3" href="https://barnesindustries.com.ar/abrigos/">
-                                    Ver todo en Abrigos
-                                    </a>
-                                </li>
-                                <li className="js-desktop-nav-item nav-item" data-component="menu.item">
-                                    <a className="nav-list-link" href="https://barnesindustries.com.ar/abrigos/sweaters/">Sweaters</a>
-                                </li>
-                                <li className="js-desktop-nav-item nav-item" data-component="menu.item">
-                                    <a className="nav-list-link" href="https://barnesindustries.com.ar/abrigos/jackets/">Jackets</a>
-                                </li>
-                                </div>
-                            </ul>
-                            </li>
-                            <li className="nav-item item-with-subitems" data-component="menu.item">
-                            <a className="js-toggle-menu-panel align-items-center nav-list-link position-relative" href="#">Remeras
-                                <span className="nav-list-arrow ml-1">
-                                <svg className="icon-inline icon-md svg-icon-text">
-                                    <use xlinkHref="#chevron" />
-                                </svg>
-                                </span>
-                            </a>
-                            <ul className="js-menu-panel nav-list-panel nav-list-panel-right nav-list-panel-left-md list-subitems" style={{"display":"none"}}>
-                                <div className="modal-header">
-                                <div className="row no-gutters">
-                                    <div className="col">
-                                    <a className="js-toggle-menu-back" href="#">
-                                        <div className="row no-gutters align-items-center">
-                                        <div className="col-auto">
-                                            <span className="modal-back pr-2 mr-1">
-                                            <svg className="icon-inline icon-flip-horizontal svg-icon-text">
-                                                <use xlinkHref="#chevron" />
-                                            </svg>
-                                            </span>
-                                        </div>
-                                        <div className="col my-3 text-center">
-                                            Remeras
-                                        </div>
-                                        </div>
-                                    </a>
-                                    </div>
-                                    <div className="col-auto">
-                                    <a className="js-toggle-menu-close js-modal-close modal-close">
-                                        <svg className="icon-inline icon-lg modal-close-icon">
-                                        <use xlinkHref="#times" />
-                                        </svg>
-                                    </a>
-                                    </div>
-                                </div>
-                                </div>
-                                <div className="modal-body p-0">
-                                <li className="nav-item py-1">
-                                    <a className="nav-list-link position-relative font-body py-3" href="https://barnesindustries.com.ar/remeras-oversize/">
-                                    Ver todo en Remeras
-                                    </a>
-                                </li>
-                                <li className="js-desktop-nav-item nav-item" data-component="menu.item">
-                                    <a className="nav-list-link" href="https://barnesindustries.com.ar/remeras-oversize/boxy/">Boxy</a>
-                                </li>
-                                <li className="js-desktop-nav-item nav-item" data-component="menu.item">
-                                    <a className="nav-list-link" href="https://barnesindustries.com.ar/remeras-oversize/oversize/">Oversize</a>
-                                </li>
-                                <li className="js-desktop-nav-item nav-item" data-component="menu.item">
-                                    <a className="nav-list-link" href="https://barnesindustries.com.ar/remeras-oversize/heavyweight/">Heavyweight</a>
-                                </li>
-                                </div>
-                            </ul>
-                            </li>
-                            <li className="js-desktop-nav-item nav-item" data-component="menu.item">
-                            <a className="nav-list-link" href="https://barnesindustries.com.ar/pants/">Pants</a>
-                            </li>
-                            <li className="js-desktop-nav-item nav-item" data-component="menu.item">
-                            <a className="nav-list-link" href="https://barnesindustries.com.ar/shorts/">Shorts</a>
-                            </li>
-                            <li className="js-desktop-nav-item nav-item" data-component="menu.item">
-                            <a className="nav-list-link" href="https://barnesindustries.com.ar/sale/">SALE</a>
-                            </li>
-                            <li className="nav-item item-with-subitems" data-component="menu.item">
-                            <a className="js-toggle-menu-panel align-items-center nav-list-link position-relative" href="#">Accesorios
-                                <span className="nav-list-arrow ml-1">
-                                <svg className="icon-inline icon-md svg-icon-text">
-                                    <use xlinkHref="#chevron" />
-                                </svg>
-                                </span>
-                            </a>
-                            <ul className="js-menu-panel nav-list-panel nav-list-panel-right nav-list-panel-left-md list-subitems" style={{"display":"none"}}>
-                                <div className="modal-header">
-                                <div className="row no-gutters">
-                                    <div className="col">
-                                    <a className="js-toggle-menu-back" href="#">
-                                        <div className="row no-gutters align-items-center">
-                                        <div className="col-auto">
-                                            <span className="modal-back pr-2 mr-1">
-                                            <svg className="icon-inline icon-flip-horizontal svg-icon-text">
-                                                <use xlinkHref="#chevron" />
-                                            </svg>
-                                            </span>
-                                        </div>
-                                        <div className="col my-3 text-center">
-                                            Accesorios
-                                        </div>
-                                        </div>
-                                    </a>
-                                    </div>
-                                    <div className="col-auto">
-                                    <a className="js-toggle-menu-close js-modal-close modal-close">
-                                        <svg className="icon-inline icon-lg modal-close-icon">
-                                        <use xlinkHref="#times" />
-                                        </svg>
-                                    </a>
-                                    </div>
-                                </div>
-                                </div>
-                                <div className="modal-body p-0">
-                                <li className="nav-item py-1">
-                                    <a className="nav-list-link position-relative font-body py-3" href="https://barnesindustries.com.ar/accesorios/">
-                                    Ver todo en Accesorios
-                                    </a>
-                                </li>
-                                <li className="js-desktop-nav-item nav-item" data-component="menu.item">
-                                    <a className="nav-list-link" href="https://barnesindustries.com.ar/accesorios/beanies/">Beanies</a>
-                                </li>
-                                </div>
-                            </ul>
-                            </li>
-                            <li className="js-desktop-nav-item nav-item" data-component="menu.item">
-                            <a className="nav-list-link" href="https://barnesindustries.com.ar/ver-todo/">Ver Todo</a>
-                            </li>
-                            <li className="js-desktop-nav-item nav-item" data-component="menu.item">
-                            <a className="nav-list-link" href="https://barnesindustries.com.ar/gift-card1/">Gift Cards</a>
-                            </li>
+                    <div className="modal-body nav-body">
+
+                    <div className="d-block d-md-none position-relative">
+                        <form className="js-search-form search-form" action="/search/" method="get">
+                        <div className="form-group m-0">
+                            <input className="js-search-input form-control search-input" autoComplete="off" type="search" name="q" placeholder="¿Qué estás buscando?" aria-label="¿Qué estás buscando?" />
+                            <button type="submit" className="search-btn search-submit-btn" value="Buscar" aria-label="Buscar">
+                            Buscar
+                            </button>
                         </div>
+                        </form>
+                        <div className="js-search-form-suggestions search-suggestions" style={{"display":"none"}} />
+                    </div>
+
+                    <div className="nav-primary">
+                        <ul className="nav-list" data-store="navigation" data-component="menu">
+                        <li className="js-desktop-nav-item nav-item" data-component="menu.item">
+                            <a className="nav-list-link" href="/">INICIO</a>
+                        </li>
+                        <li className="js-desktop-nav-item nav-item" data-component="menu.item">
+                            <a className="nav-list-link" href="https://barnesindustries.com.ar/new-collection/">NEW COLLECTION</a>
+                        </li>
+                        <li className="nav-item item-with-subitems" data-component="menu.item">
+                            <a className="js-toggle-menu-panel align-items-center nav-list-link position-relative" href="#">PRODUCTOS
+                            <span className="nav-list-arrow ml-1">
+                                <svg className="icon-inline icon-md svg-icon-text">
+                                <use xlinkHref="#chevron" />
+                                </svg>
+                            </span>
+                            </a>
+                            <ul className="js-menu-panel nav-list-panel nav-list-panel-right nav-list-panel-left-md list-subitems" style={{"display":"none"}}>
+                                <div className="modal-header">
+                                    <div className="row no-gutters">
+                                    <div className="col">
+                                        <a className="js-toggle-menu-back" href="#">
+                                        <div className="row no-gutters align-items-center">
+                                            <div className="col-auto">
+                                            <span className="modal-back pr-2 mr-1">
+                                                <svg className="icon-inline icon-flip-horizontal svg-icon-text">
+                                                <use xlinkHref="#chevron" />
+                                                </svg>
+                                            </span>
+                                            </div>
+                                            <div className="col my-3 text-center">PRODUCTOS</div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div className="col-auto">
+                                        <a className="js-toggle-menu-close js-modal-close modal-close">
+                                        <svg className="icon-inline icon-lg modal-close-icon">
+                                            <use xlinkHref="#times" />
+                                        </svg>
+                                        </a>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div className="modal-body p-0">
+                                    <li className="nav-item py-1">
+                                    <a className="nav-list-link position-relative font-body py-3" href="https://barnesindustries.com.ar/productos/">
+                                        Ver todos los productos
+                                    </a>
+                                    </li>
+                                    <li className="js-desktop-nav-item nav-item" data-component="menu.item">
+                                    <a className="nav-list-link" href="https://barnesindustries.com.ar/new-collection/">NEW COLLECTION</a>
+                                    </li>
+                                    <li className="nav-item item-with-subitems" data-component="menu.item">
+                                    <a className="js-toggle-menu-panel align-items-center nav-list-link position-relative" href="#">Abrigos
+                                        <span className="nav-list-arrow ml-1">
+                                        <svg className="icon-inline icon-md svg-icon-text">
+                                            <use xlinkHref="#chevron" />
+                                        </svg>
+                                        </span>
+                                    </a>
+                                    <ul className="js-menu-panel nav-list-panel nav-list-panel-right nav-list-panel-left-md list-subitems" style={{"display":"none"}}>
+                                        <div className="modal-header">
+                                        <div className="row no-gutters">
+                                            <div className="col">
+                                            <a className="js-toggle-menu-back" href="#">
+                                                <div className="row no-gutters align-items-center">
+                                                <div className="col-auto">
+                                                    <span className="modal-back pr-2 mr-1">
+                                                    <svg className="icon-inline icon-flip-horizontal svg-icon-text">
+                                                        <use xlinkHref="#chevron" />
+                                                    </svg>
+                                                    </span>
+                                                </div>
+                                                <div className="col my-3 text-center">
+                                                    Abrigos
+                                                </div>
+                                                </div>
+                                            </a>
+                                            </div>
+                                            <div className="col-auto">
+                                            <a className="js-toggle-menu-close js-modal-close modal-close">
+                                                <svg className="icon-inline icon-lg modal-close-icon">
+                                                <use xlinkHref="#times" />
+                                                </svg>
+                                            </a>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="modal-body p-0">
+                                        <li className="nav-item py-1">
+                                            <a className="nav-list-link position-relative font-body py-3" href="https://barnesindustries.com.ar/abrigos/">
+                                            Ver todo en Abrigos
+                                            </a>
+                                        </li>
+                                        <li className="js-desktop-nav-item nav-item" data-component="menu.item">
+                                            <a className="nav-list-link" href="https://barnesindustries.com.ar/abrigos/sweaters/">Sweaters</a>
+                                        </li>
+                                        <li className="js-desktop-nav-item nav-item" data-component="menu.item">
+                                            <a className="nav-list-link" href="https://barnesindustries.com.ar/abrigos/jackets/">Jackets</a>
+                                        </li>
+                                        </div>
+                                    </ul>
+                                    </li>
+                                    <li className="nav-item item-with-subitems" data-component="menu.item">
+                                    <a className="js-toggle-menu-panel align-items-center nav-list-link position-relative" href="#">Remeras
+                                        <span className="nav-list-arrow ml-1">
+                                        <svg className="icon-inline icon-md svg-icon-text">
+                                            <use xlinkHref="#chevron" />
+                                        </svg>
+                                        </span>
+                                    </a>
+                                    <ul className="js-menu-panel nav-list-panel nav-list-panel-right nav-list-panel-left-md list-subitems" style={{"display":"none"}}>
+                                        <div className="modal-header">
+                                        <div className="row no-gutters">
+                                            <div className="col">
+                                            <a className="js-toggle-menu-back" href="#">
+                                                <div className="row no-gutters align-items-center">
+                                                <div className="col-auto">
+                                                    <span className="modal-back pr-2 mr-1">
+                                                    <svg className="icon-inline icon-flip-horizontal svg-icon-text">
+                                                        <use xlinkHref="#chevron" />
+                                                    </svg>
+                                                    </span>
+                                                </div>
+                                                <div className="col my-3 text-center">
+                                                    Remeras
+                                                </div>
+                                                </div>
+                                            </a>
+                                            </div>
+                                            <div className="col-auto">
+                                            <a className="js-toggle-menu-close js-modal-close modal-close">
+                                                <svg className="icon-inline icon-lg modal-close-icon">
+                                                <use xlinkHref="#times" />
+                                                </svg>
+                                            </a>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="modal-body p-0">
+                                        <li className="nav-item py-1">
+                                            <a className="nav-list-link position-relative font-body py-3" href="https://barnesindustries.com.ar/remeras-oversize/">
+                                            Ver todo en Remeras
+                                            </a>
+                                        </li>
+                                        <li className="js-desktop-nav-item nav-item" data-component="menu.item">
+                                            <a className="nav-list-link" href="https://barnesindustries.com.ar/remeras-oversize/boxy/">Boxy</a>
+                                        </li>
+                                        <li className="js-desktop-nav-item nav-item" data-component="menu.item">
+                                            <a className="nav-list-link" href="https://barnesindustries.com.ar/remeras-oversize/oversize/">Oversize</a>
+                                        </li>
+                                        <li className="js-desktop-nav-item nav-item" data-component="menu.item">
+                                            <a className="nav-list-link" href="https://barnesindustries.com.ar/remeras-oversize/heavyweight/">Heavyweight</a>
+                                        </li>
+                                        </div>
+                                    </ul>
+                                    </li>
+                                    <li className="js-desktop-nav-item nav-item" data-component="menu.item">
+                                    <a className="nav-list-link" href="https://barnesindustries.com.ar/pants/">Pants</a>
+                                    </li>
+                                    <li className="js-desktop-nav-item nav-item" data-component="menu.item">
+                                    <a className="nav-list-link" href="https://barnesindustries.com.ar/shorts/">Shorts</a>
+                                    </li>
+                                    <li className="js-desktop-nav-item nav-item" data-component="menu.item">
+                                    <a className="nav-list-link" href="https://barnesindustries.com.ar/sale/">SALE</a>
+                                    </li>
+                                    <li className="nav-item item-with-subitems" data-component="menu.item">
+                                    <a className="js-toggle-menu-panel align-items-center nav-list-link position-relative" href="#">Accesorios
+                                        <span className="nav-list-arrow ml-1">
+                                        <svg className="icon-inline icon-md svg-icon-text">
+                                            <use xlinkHref="#chevron" />
+                                        </svg>
+                                        </span>
+                                    </a>
+                                    <ul className="js-menu-panel nav-list-panel nav-list-panel-right nav-list-panel-left-md list-subitems" style={{"display":"none"}}>
+                                        <div className="modal-header">
+                                        <div className="row no-gutters">
+                                            <div className="col">
+                                            <a className="js-toggle-menu-back" href="#">
+                                                <div className="row no-gutters align-items-center">
+                                                <div className="col-auto">
+                                                    <span className="modal-back pr-2 mr-1">
+                                                    <svg className="icon-inline icon-flip-horizontal svg-icon-text">
+                                                        <use xlinkHref="#chevron" />
+                                                    </svg>
+                                                    </span>
+                                                </div>
+                                                <div className="col my-3 text-center">
+                                                    Accesorios
+                                                </div>
+                                                </div>
+                                            </a>
+                                            </div>
+                                            <div className="col-auto">
+                                            <a className="js-toggle-menu-close js-modal-close modal-close">
+                                                <svg className="icon-inline icon-lg modal-close-icon">
+                                                <use xlinkHref="#times" />
+                                                </svg>
+                                            </a>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="modal-body p-0">
+                                        <li className="nav-item py-1">
+                                            <a className="nav-list-link position-relative font-body py-3" href="https://barnesindustries.com.ar/accesorios/">
+                                            Ver todo en Accesorios
+                                            </a>
+                                        </li>
+                                        <li className="js-desktop-nav-item nav-item" data-component="menu.item">
+                                            <a className="nav-list-link" href="https://barnesindustries.com.ar/accesorios/beanies/">Beanies</a>
+                                        </li>
+                                        </div>
+                                    </ul>
+                                    </li>
+                                    <li className="js-desktop-nav-item nav-item" data-component="menu.item">
+                                    <a className="nav-list-link" href="https://barnesindustries.com.ar/ver-todo/">Ver Todo</a>
+                                    </li>
+                                    <li className="js-desktop-nav-item nav-item" data-component="menu.item">
+                                    <a className="nav-list-link" href="https://barnesindustries.com.ar/gift-card1/">Gift Cards</a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+
+                        <li className="js-desktop-nav-item nav-item" data-component="menu.item">
+                            <a className="nav-list-link" href="https://barnesindustries.com.ar/sale/">SALE</a>
+                        </li>
 
                         </ul>
-                        
-                    </li>
 
-                    <li className="js-desktop-nav-item nav-item" data-component="menu.item">
-                        <a className="nav-list-link" href="https://barnesindustries.com.ar/sale/">SALE</a>
-                    </li>
-
-                    </ul>
-                </div>
-                </div>
-            </div>
-
-            <div className="modal-footer text-right hamburger-footer mb-0 p-0">
-                <div className="d-block d-md-none">
-                <div className="nav-secondary text-left" data-store="account-links">
-                    <div className="p-3">
-                    <span className="utilities-container text-transform">
-                        <a href="/account" title>¡Hola, Dan!</a>
-                        <span className="mx-1">/</span>
-                        <a href="/account/logout" title className="ml-1">Cerrar sesión</a>
-                    </span>
                     </div>
                 </div>
-                </div>
             </div>
+
+                    <div className="modal-footer text-right hamburger-footer mb-0 p-0">
+                        <div className="d-block d-md-none">
+                            <div className="nav-secondary text-left" data-store="account-links">
+                                <div className="p-3">
+                                <span className="utilities-container text-transform">
+                                    <a href="/account/logout"> ¡Hola, Dan!</a>
+                                    <span className="mx-1">/</span>
+                                    <a href="/account/logout"  className="ml-1">Cerrar sesión</a>
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
             </div>
         </div>
-        
+
+        {/* 4  */}
         <div className="js-modal-overlay modal-overlay" data-modal-id="#nav-hamburger" style={{"display":"none"}} />
-        
         <div id="modal-cart" className="js-modal js-fullscreen-modal modal modal-cart modal-right modal-right-md transition-slide modal-docked-md transition-soft" style={{"display":"none"}} data-component="cart">
             <form action="/comprar/" method="post" className="js-ajax-cart-panel h-100" data-store="cart-form">
             <div className="js-modal-close js-fullscreen-modal-close modal-header">
@@ -368,7 +380,7 @@ const page = () => {
                             </a>
                             </div>
                             <div className="col-auto text-center">
-                            <button type="button" className="btn btn-link font-small pr-0 pl-2" onclick="LS.removeItem(1826267925, true)" data-component="line-item.remove">
+                            <button type="button" className="btn btn-link font-small pr-0 pl-2"  data-component="line-item.remove">
                                 Borrar
                             </button>
                             </div>
@@ -380,7 +392,7 @@ const page = () => {
                         <div className="cart-item-quantity col-auto" data-component="line-item.subtotal">
                         <div className="form-group float-left form-quantity cart-item-quantity small p-0 mb-0">
                             <div className="form-row m-0 align-items-center">
-                            <span className="js-cart-quantity-btn form-quantity-icon icon-30px font-small" onclick="LS.minusQuantity(1826267925, true)" data-component="quantity.minus">
+                            <span className="js-cart-quantity-btn form-quantity-icon icon-30px font-small"  data-component="quantity.minus">
                                 <svg className="icon-inline">
                                 <use xlinkHref="#minus" />
                                 </svg>
@@ -393,7 +405,7 @@ const page = () => {
                                 <use xlinkHref="#spinner-third" />
                                 </svg>
                             </span>
-                            <span className="js-cart-quantity-btn form-quantity-icon icon-30px font-small" onclick="LS.plusQuantity(1826267925, true)" data-component="quantity.plus">
+                            <span className="js-cart-quantity-btn form-quantity-icon icon-30px font-small"  data-component="quantity.plus">
                                 <svg className="icon-inline">
                                 <use xlinkHref="#plus" />
                                 </svg>
@@ -599,23 +611,24 @@ const page = () => {
             </form>
         </div>
 
+{/* 6 */}
         <div className="js-modal-overlay modal-overlay" data-modal-id="#modal-cart" style={{"display":"none"}} />
-
-        <div className="container ">
+        {/* 7 */}
+        <div className="login-container-2">
             <section className="page-header py-4 " data-store="page-title">
                 <div className="breadcrumbs">
-                    <a className="crumb" href="https://barnesindustries.com.ar" title="Barnes Industries">Inicio</a>
+                    <Link className="crumb" href="/" title="Barnes Industries">Inicio</Link>
                     <span className="separator">|</span>
                     <a className="crumb" href="/account" title="Mi Cuenta">Mi Cuenta</a>
                     <span className="separator">|</span>
                     <span className="crumb active">Login</span>
                 </div>
-                <h1 className="h3-huge h1-huge-md">Iniciar sesión</h1>
             </section>
         </div>
 
         {/* form section */}
-        <section className="account-page mb-4 login_form">
+        <section className="login-container-3 account-page mb-4 login_form">
+
             <div className="container">
                 <div className="row-page">
 
@@ -641,6 +654,8 @@ const page = () => {
 
                 
                         <form method="post" data-store="account-login">
+                <h1 className="h3-huge h1-huge-md">Iniciar sesión</h1>
+
                             <div >
                             {/* EMAIL */}
                             <label 
@@ -693,7 +708,7 @@ const page = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </section>  
     </div>
   )
 }

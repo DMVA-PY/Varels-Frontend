@@ -1,13 +1,17 @@
+import React from "react";
+import Provider from '../redux/provider';
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Setup } from "@/components/utils";
 
-import Header from '../app/_components/Header.jsx'
-import Footer from '../app/_components/Footer.jsx'
-import MainStyles from '../app/_styles/MainStyles.jsx'
-import "../app/_styles/async.css"
-import "../app/_styles/critical.css"
-import React from "react";
-import Provider from './redux/provider';
+import "/home/vare/project/farm_varels/Varels-Frontend/src/styles/async.css"
+import "/home/vare/project/farm_varels/Varels-Frontend/src/styles/critical.css"
+
+import MainStyles from '/home/vare/project/farm_varels/Varels-Frontend/src/styles/MainStyles.jsx'
+
+import Footer from '/home/vare/project/farm_varels/Varels-Frontend/src/components/common/Footer.jsx'
+import Header from "@/components/common/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,12 +28,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body >
-        <Provider>
-          <MainStyles/>
-          <Header/>
+         <Provider> 
+          <Setup/>
+           <MainStyles/> 
           {children}
           <Footer/> 
-        </Provider>
+       </Provider> 
       </body>
     </html>
   );

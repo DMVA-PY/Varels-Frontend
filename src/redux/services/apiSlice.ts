@@ -1,4 +1,7 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query'
+
+
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+
 import { setAuth, logout } from '../features/authSlice'
 import { Mutex } from 'async-mutex'
 import type {
@@ -68,4 +71,4 @@ export const apiSlice = createApi({
     reducerPath: 'api',
     baseQuery: baseQueryWithReauth,
     endpoints: builder => ({}),
-})
+})  

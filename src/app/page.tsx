@@ -1,9 +1,11 @@
+'use client'
 import React from 'react'
+import Header from '/home/vare/project/farm_varels/Varels-Frontend/src/components/common/Header.jsx'
 
 const page = () => {
   return (
     <div>
-
+        <Header/>
         {/* Main-1 */}
         <section
           className="section-home-color is-inViewport"

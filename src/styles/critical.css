@@ -5303,9 +5303,6 @@ input[type=number] {
 }
 
 .nav-dropdown-content {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s linear .3s, opacity .3s linear
 }
 
 .utilities-container .nav-dropdown-content {

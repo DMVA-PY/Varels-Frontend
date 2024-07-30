@@ -1,8 +1,16 @@
 'use client'
-import React, { ChangeEvent, useState } from 'react'
-import '/home/vare/project/farm_varels/Varels-Frontend/src/app/(routes)/account/register/login.css'
+import React, { ChangeEvent, FormEvent, useState } from 'react'
+import '/home/vare/project/farm_varels/Varels-Frontend/src/app/(routes)/account/register/register.css'
+import Link from 'next/link'
+import { useRegisterMutation } from '@/redux/features/authApiSlice'
+import { toast } from 'react-toastify'
+import { useRouter } from 'next/navigation'
+import Spinner from '/home/vare/project/farm_varels/Varels-Frontend/src/components/common/Spinner'
+/* import '/home/vare/project/farm_varels/Varels-Frontend/src/app/(routes)/account/register/register.css' */
 
 const page = () => {
+  const router = useRouter();
+  const [register, {isLoading}] = useRegisterMutation();
   const [formData, setFormData] = useState({    
       first_name:'',
       last_name: '',
@@ -19,12 +27,24 @@ const page = () => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   };
 
+  const onSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    register({first_name, last_name, password, re_password})
+      .unwrap()
+      .then(()=>{
+        toast.success('Please check email to verify account')
+        router.push('/auth/login')
+      })
+      .catch(()=>{
+        toast.error('Failed to register account')
+      })
+  };
   return (
     <div className="container-register">
         <div className="container">
           <section className="page-header py-4 " data-store="page-title">
             <div className="breadcrumbs ">
-              <a className="crumb" href="https://barnesindustries.com.ar/" title="Barnes Industries">Inicio</a>
+              <Link href='/' className="crumb" title="Barnes Industries">Inicio</Link>
               <span className="separator">|</span>
               <a className="crumb" href="https://barnesindustries.com.ar/account" title="Mi Cuenta">Mi Cuenta</a>
               <span className="separator">|</span>
@@ -42,9 +62,9 @@ const page = () => {
               <div className="col-md-5">
                 <div className="mb-4">Comprá más rápido y llevá el control de tus pedidos, ¡en un solo lugar!</div>
 
-                <form id="register-form" action="https://barnesindustries.com.ar/account/register" method="post" className="js-form form " data-store="account-register">
+                <form action="" method="post" className="already-account text-sm " data-store="account-register">
                  
-                 <div className="form-group ">  
+                  <div className="form-group ">  
                     <label className="form-label" htmlFor="first_name">Nombre </label>
                     <input onChange={onChange} value={first_name} type="text" id="name" name="first_name"  autoCorrect="off" autoCapitalize="off" className="js-account-input form-control " placeholder="ej.: María Perez" />
                   </div>
@@ -92,13 +112,12 @@ const page = () => {
 
 
                   <button className="js-recaptcha-button btn btn-primary btn-big btn-block mb-3" type="submit" value="Crear cuenta"  disabled>
-                    Crear cuenta
-                    <span className="js-form-spinner form-spinner icon-inline icon-spin svg-icon-mask ml-2" style={{display: 'none'}} />
+                    {isLoading ? <Spinner sm/> : "Crear cuenta"}
                   </button>
                   
-                  <div className="mt-2 mb-2 text-center font-small">
+                  <div className=" mt-2 mb-2 text-center font-small">
                     ¿Ya tenés una cuenta?
-                    <a href="https://barnesindustries.com.ar/account/login/" className="btn-link font-small mb-2 ml-1">Iniciá sesión</a>
+                    <Link href="/account/login/" className="btn-link font-small mb-2 ml-1">Iniciá sesión </Link>
                   </div>
                 </form>
               </div>

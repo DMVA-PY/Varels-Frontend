@@ -1,9 +1,14 @@
 'use client'
 import React, { useState } from 'react'
-import CookieBanner from '../_components/Cookies'
-import Carrito from '../_components/Carrito'
-import CarritoSmart from '../_components/CarritoSmart.jsx'
 import Link from 'next/link'
+import Carrito from '/home/vare/project/farm_varels/Varels-Frontend/src/components/common/Carrito.jsx';
+import CookieBanner from '/home/vare/project/farm_varels/Varels-Frontend/src/components/common/CookieBanner.jsx'
+import CarritoSmart from '/home/vare/project/farm_varels/Varels-Frontend/src/components/common/CarritoSmart.jsx'
+
+import "/home/vare/project/farm_varels/Varels-Frontend/src/styles/async.css"
+import "/home/vare/project/farm_varels/Varels-Frontend/src/styles/critical.css"
+import MainStyles from '/home/vare/project/farm_varels/Varels-Frontend/src/styles/MainStyles.jsx' 
+
 const Header = () => {
 
   /* STATE */
@@ -281,13 +286,14 @@ const Header = () => {
                   </a>
                 </li>
 
+                {/*productos problema */}
                 <li
-                  className="js-desktop-nav-item js-item-subitems-desktop nav-item-desktop js-nav-main-item nav-dropdown nav-main-item nav-item item-with-subitems"
+                  className=" nav-item-desktop js-nav-main-item nav-dropdown nav-main-item nav-item item-with-subitems"
                   data-component="menu.item"
                 >
-                  <div className="nav-item-container">
+                  <div
+                  >
                     <a
-                      className=" nav-list-link position-relative "
                       href="https://barnesindustries.com.ar/productos/"
                     >
                       PRODUCTOS
@@ -480,6 +486,7 @@ const Header = () => {
                     </div>
                   </div>
                 </li>
+
 
                 <li
                   className="js-desktop-nav-item js-nav-main-item nav-main-item nav-item-desktop nav-item"

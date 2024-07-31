@@ -6,6 +6,7 @@ input:hover {
 .smaller-container {
     transform: scale(0.80);
     width: 100%;
+    margin-top: -90px;
 }
 
 .zero-container {
@@ -26,10 +27,6 @@ input:hover {
 
 .h1-breadcrumbs {
     text-align: center;
-}
-
-.form_container {
-    
 }
 
 
@@ -75,13 +72,5 @@ html, body {
   
 input:hover {
     cursor:pointer;
-}
-
-.login-container{
-    height: 100vh;
-    padding:10px;
-}
-.login-container-3{
-    margin-top:40px
 }
 

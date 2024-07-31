@@ -620,9 +620,9 @@ const page = () => {
             <div className="breadcrumbs ">
               <Link href='/' className="crumb" title="Barnes Industries">Inicio</Link>
               <span className="separator">|</span>
-              <a className="crumb"  title="Mi Cuenta">Mi Cuenta</a>
+              <Link href='/' className="crumb"  title="Mi Cuenta">Mi Cuenta</Link>
               <span className="separator">|</span>
-              <span className="crumb active">Crear Cuenta</span>
+              <span   className="crumb active">Login</span>
             </div>
           </section>
         </div>

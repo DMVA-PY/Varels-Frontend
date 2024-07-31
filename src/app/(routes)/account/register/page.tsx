@@ -48,7 +48,7 @@ const page = () => {
               <span className="separator">|</span>
               <a className="crumb" href="https://barnesindustries.com.ar/account" title="Mi Cuenta">Mi Cuenta</a>
               <span className="separator">|</span>
-              <span className="crumb active">Crear Cuenta</span>
+              <span className="crumb active">Crear cuenta</span>
             </div>
           </section>
         </div>

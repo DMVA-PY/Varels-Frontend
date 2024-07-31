@@ -135,7 +135,6 @@ const Header = () => {
                     data-toggle="#nav-hamburger"
                     aria-label="Menú"
                     data-component="menu-button"
-                    
                   >
                     <span onClick={toggleVisibility} className="utilities-text">Menú</span>
                   </a>
@@ -627,7 +626,7 @@ const Header = () => {
           <div className="modal-scrollable-area">
 
             {/* X BUTTON */}
-            <div className="js-modal-close   modal-header modal-header-no-title js-toggle-menu-close p-3">
+            <div className="js-modal-close modal-header modal-header-no-title js-toggle-menu-close p-3">
               <svg
                 className="icon-inline icon-lg svg-icon-text"
                 onClick={toggleVisibility}

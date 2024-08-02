@@ -5,10 +5,9 @@ import authReducer from './features/authSlice'
 
 export const makeStore =()=>{
     return configureStore({
-        
-        /* RTK QUERY */
         reducer: {
-            [apiSlice.reducerPath]: apiSlice.reducer
+            [apiSlice.reducerPath]: apiSlice.reducer,
+            auth: authReducer,
         },
         middleware: getDefaultMiddleware =>
             getDefaultMiddleware().concat(apiSlice.middleware),

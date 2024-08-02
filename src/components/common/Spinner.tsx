@@ -1,6 +1,7 @@
 import cn from 'classnames';
 import { ImSpinner3 } from 'react-icons/im';
 import '/home/vare/project/farm_varels/Varels-Frontend/src/app/(routes)/account/register/register.css';
+import '/home/vare/project/farm_varels/Varels-Frontend/src/styles/tailwind_only_css.css'
 
 interface Props {
 	sm?: boolean;

@@ -11,7 +11,6 @@ import "/home/vare/project/farm_varels/Varels-Frontend/src/styles/critical.css"
 import MainStyles from '/home/vare/project/farm_varels/Varels-Frontend/src/styles/MainStyles.jsx'
 
 import Footer from '/home/vare/project/farm_varels/Varels-Frontend/src/components/common/Footer.jsx'
-import Header from "@/components/common/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,12 +27,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body >
-         <Provider> 
+        <Provider> 
           <Setup/>
-           <MainStyles/> 
+          <MainStyles/> 
           {children}
           <Footer/> 
-       </Provider> 
+        </Provider> 
       </body>
     </html>
   );

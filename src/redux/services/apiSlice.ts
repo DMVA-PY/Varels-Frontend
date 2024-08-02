@@ -1,19 +1,17 @@
-
-
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-
-import { setAuth, logout } from '../features/authSlice'
 import { Mutex } from 'async-mutex'
 import type {
   BaseQueryFn,
   FetchArgs,
   FetchBaseQueryError,
 } from '@reduxjs/toolkit/query'
+import { setAuth, logout } from '../features/authSlice'
 
+console.log('NEXT_PUBLIC_HOST: ', process.env.NEXT_PUBLIC_HOST)
 
 // create a new mutex
 const mutex = new Mutex()
-
+  
 // base query / fetchBaseQuery
 const baseQuery = fetchBaseQuery({ 
     baseUrl: `${process.env.NEXT_PUBLIC_HOST}/api`, 

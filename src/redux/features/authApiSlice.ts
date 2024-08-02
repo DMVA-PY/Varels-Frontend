@@ -18,7 +18,7 @@ interface CreateUserResponse {
 }
 
 const authApiSlice = apiSlice.injectEndpoints({
-	endpoints: builder => ({
+	endpoints: (builder) => ({
 		retrieveUser: builder.query<User, void>({
 			query: () => '/users/me/',
 		}),
@@ -73,7 +73,7 @@ const authApiSlice = apiSlice.injectEndpoints({
 
 		activation: builder.mutation({
 			query: ({ uid, token }) => ({
-				url: '/users/activation/',
+				url: '/account/activation/',
 				method: 'POST',
 				body: { uid, token },
 			}),

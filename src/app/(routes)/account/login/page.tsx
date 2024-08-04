@@ -364,8 +364,8 @@ const page = () => {
                 <div className="js-cart-item js-cart-item-shippable cart-item row no-gutters pb-4" data-item-id={1826267925} data-store="cart-item-210678589" data-component="cart.line-item">
                     <div className="col-auto">
                     <a href="https://barnesindustries.com.ar/productos/remera-oversize-heavy-weight-racing-team/?variant=901418056" className="d-block cart-item-image-col text-center">
-                        <img src="//acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-040-aac600a2f52596bac417143923339212-320-0.webp" className="img-fluid d-inline-block cart-item-image" />
-                    </a>
+{/*                         <img src="//acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-040-aac600a2f52596bac417143923339212-320-0.webp" className="img-fluid d-inline-block cart-item-image" />
+ */}                    </a>
                     </div>
                     <div className="col pt-2 pl-3 align-items-center">
                     <div className="row align-items-center">
@@ -373,7 +373,7 @@ const page = () => {
                         <div className="row w-100 no-gutters">
                             <div className="cart-item-name-container col" data-component="line-item.name">
                             <a href="https://barnesindustries.com.ar/productos/remera-oversize-heavy-weight-racing-team/?variant=901418056" data-component="name.short-name" className="cart-item-name d-block">
-                                REMERA HEAVYWEIGHT "RACING TEAM"
+                                REMERA HEAVYWEIGHT &quot;RACING TEAM&quot;
                                 <div className="font-small mt-1" data-component="name.short-variant-name">
                                 (talle 1)
                                 </div>

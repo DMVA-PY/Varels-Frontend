@@ -30,7 +30,7 @@ const Header = () => {
 
       {/* HEADER */}
       <header
-        className="js-head-main head-main    head-colors position-sticky position-relative-md head-logo-center head-logo-md-center   head-md-visible-nav   transition-soft"
+        className="js-head-main head-main  head-colors position-sticky position-relative-md head-logo-center head-logo-md-center   head-md-visible-nav   transition-soft"
         data-store="head"
       >
         {/* BLACK BAR */}

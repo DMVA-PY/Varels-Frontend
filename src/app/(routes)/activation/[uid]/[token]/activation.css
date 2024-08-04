@@ -84,7 +84,7 @@ input:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size:270px;
+    font-size:200px;
     color: green;
 }
 
@@ -92,20 +92,21 @@ input:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 35px;
 }
 
 .account-sucess-page {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 55px;
 }
 
 .account-icon-page {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
     text-align: center;
+    margin-top: 35px;
 
 }
 
@@ -137,12 +138,12 @@ input:hover {
   
 @media (max-width: 768px) {
     .congratz-font {
-        font-size: 16px;
+        font-size: 20px;
     }
     .account-icon {
         font-size:160px;
     }
     .account-sucess-page{
-        font-size:30px;
+        font-size:35px;
     }
 }

@@ -10,6 +10,7 @@ import { useRouter } from 'next/navigation'
 import Spinner from '/home/vare/project/farm_varels/Varels-Frontend/src/components/common/Spinner'
 import RegisterForm  from '/home/vare/project/farm_varels/Varels-Frontend/src/components/forms/RegisterForm';
 
+
 const page = () => {
   
   return (

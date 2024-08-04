@@ -23,7 +23,7 @@ const page = () => {
       </div>
 
       <div className='account-page'>
-        <h1 className='account-sucess-page'>Success!</h1>
+        <h1 className='account-sucess-page'>Account created</h1>
       </div>
 
       <div className='account-icon'>
@@ -40,7 +40,6 @@ const page = () => {
         </button>
         </div>
       </div>
-
   )
 }
 export default page;

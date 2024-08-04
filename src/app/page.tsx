@@ -1,12 +1,13 @@
 'use client'
 import React from 'react'
 import Header from '/home/vare/project/farm_varels/Varels-Frontend/src/components/common/Header.jsx'
+import Image from 'next/image'
 
 const page = () => {
   return (
-    <div>
+    <div className='head-main  '>
         <Header/>
-        {/* Main-1 */}
+        {/* Banner Main-1 */}
         <section
           className="section-home-color is-inViewport"
           data-store="home-slider"
@@ -27,11 +28,13 @@ const page = () => {
                       className="swiper-slide slide-container swiper- swiper-slide-active"
                     >
                       <div className="slider-slide">
+
                         <img
                           className="slider-image swiper-lazy fade-in swiper-lazy-loaded"
                           alt="Carrusel 1"
                           src="../barnes-main.webp"
                         />
+
                         <div className="placeholder-fade" />
                       </div>
                     </div>
@@ -80,7 +83,7 @@ const page = () => {
           
         </section>
 
-        {/* Second-2 */}
+        {/* Duo Second-2 */}
         <section
           className="section-home section-banners-home position-relative overflow-none section-home-color p-0"
           data-store="home-banner-promotional"
@@ -161,7 +164,7 @@ const page = () => {
 
         </section>
 
-        {/* Third-3 */}
+        {/* Nuevos ingresos Third-3 */}
         <section
           className="section-home section-featured-home section-featured-products-home"
           data-store="home-products-featured"
@@ -187,12 +190,14 @@ const page = () => {
                   </div>
                 </div>
               </div>
-
+                
+              {/* items */}
               <div className="col-md-9">
                 <div className="js-swiper-featured swiper-container">
 
                   <div className="swiper-wrapper swiper-mobile-only flex-nowrap flex-md-wrap row row-grid">
 
+                    {/* item 1 */}
                     <div
                       className="js-item-product js-item-slide swiper-slide col-12 col-md-4 item-product col-grid"
                       data-product-type="list"
@@ -233,7 +238,6 @@ const page = () => {
                                 <img
                                   alt="DRILL CREWNECK"
                                   data-sizes="auto"
-                                  
                                   data-srcset="//acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-240-0.webp 240w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-320-0.webp 320w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-480-0.webp 480w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-640-0.webp 640w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-1024-1024.webp 1024w"
                                   className="js-item-image js-item-image-secondary lazyautosizes img-absolute img-absolute-centered fade-in item-image-secondary lazyloaded"
                                   sizes="310px"
@@ -242,6 +246,7 @@ const page = () => {
                                 />
                               </a>
                             </div>
+
                             <div className=" labels " data-store="product-item-labels">
                               <div
                                 className="js-stock-label label label-default mb-2"
@@ -256,11 +261,13 @@ const page = () => {
                                 -<span className="js-offer-percentage">15</span>% OFF
                               </div>
                             </div>
+
                             <span
                               className="hidden"
                               data-store="stock-product-211050206-6"
                             />
                           </div>
+
                           <div className="js-item-variants hidden">
                             <form
                               className="js-product-form"
@@ -417,6 +424,7 @@ const page = () => {
                               </div>
                             </form>
                           </div>
+
                           <div
                             className="item-description pt-3"
                             data-store="product-item-info-211050206"
@@ -479,34 +487,36 @@ const page = () => {
                               </div>
                             </a>
                           </div>
+
                         </div>
                       </div>
                     </div>
 
+                    {/* item 2 */}
                     <div
                       className="js-item-product js-item-slide swiper-slide col-12 col-md-4 item-product col-grid"
                       data-product-type="list"
-                      data-product-id={211048292}
-                      data-store="product-item-211048292"
+                      data-product-id={211050206}
+                      data-store="product-item-211050206"
                       data-component="product-list-item"
-                      data-component-value={211048292}
+                      data-component-value={211050206}
                     >
                       <div className="item">
                         <div
                           className="js-product-container js-quickshop-container js-quickshop-has-variants position-relative"
-                          data-variants='[{"product_id":211048292,"price_short":"$104.500,00","price_long":"$104.500,00 ARS","price_number":104500,"price_number_raw":10450000,"price_with_payment_discount_short":"$78.375,00","compare_at_price_short":"$130.000,00","compare_at_price_long":"$130.000,00 ARS","compare_at_price_number":130000,"stock":4,"sku":null,"available":true,"contact":false,"option0":"talle 1","option1":null,"option2":null,"id":901413842,"image":644761940,"image_url":"\/\/acdn.mitiendanube.com\/stores\/001\/785\/816\/products\/rodraxph-025-d5331cc73d0ac5215317146618628454-1024-1024.webp","installments_data":"{\"Pago Nube\":{\"3\":{\"installment_value\":34833.333333333,\"installment_value_cents\":3483333.3333333,\"interest\":0,\"total_value\":104500,\"without_interests\":true},\"6\":{\"installment_value\":17416.666666667,\"installment_value_cents\":1741666.6666667,\"interest\":0,\"total_value\":104500,\"without_interests\":true}},\"Pagos Personalizados\":{\"1\":{\"installment_value\":104500,\"installment_value_cents\":10450000,\"interest\":0,\"total_value\":104500,\"without_interests\":true}}}"},{"product_id":211048292,"price_short":"$104.500,00","price_long":"$104.500,00 ARS","price_number":104500,"price_number_raw":10450000,"price_with_payment_discount_short":"$78.375,00","compare_at_price_short":"$130.000,00","compare_at_price_long":"$130.000,00 ARS","compare_at_price_number":130000,"stock":2,"sku":null,"available":true,"contact":false,"option0":"talle 2","option1":null,"option2":null,"id":901413847,"image":644761940,"image_url":"\/\/acdn.mitiendanube.com\/stores\/001\/785\/816\/products\/rodraxph-025-d5331cc73d0ac5215317146618628454-1024-1024.webp","installments_data":"{\"Pago Nube\":{\"3\":{\"installment_value\":34833.333333333,\"installment_value_cents\":3483333.3333333,\"interest\":0,\"total_value\":104500,\"without_interests\":true},\"6\":{\"installment_value\":17416.666666667,\"installment_value_cents\":1741666.6666667,\"interest\":0,\"total_value\":104500,\"without_interests\":true}},\"Pagos Personalizados\":{\"1\":{\"installment_value\":104500,\"installment_value_cents\":10450000,\"interest\":0,\"total_value\":104500,\"without_interests\":true}}}"},{"product_id":211048292,"price_short":"$104.500,00","price_long":"$104.500,00 ARS","price_number":104500,"price_number_raw":10450000,"price_with_payment_discount_short":"$78.375,00","compare_at_price_short":"$130.000,00","compare_at_price_long":"$130.000,00 ARS","compare_at_price_number":130000,"stock":5,"sku":null,"available":true,"contact":false,"option0":"talle 3","option1":null,"option2":null,"id":901414184,"image":644761940,"image_url":"\/\/acdn.mitiendanube.com\/stores\/001\/785\/816\/products\/rodraxph-025-d5331cc73d0ac5215317146618628454-1024-1024.webp","installments_data":"{\"Pago Nube\":{\"3\":{\"installment_value\":34833.333333333,\"installment_value_cents\":3483333.3333333,\"interest\":0,\"total_value\":104500,\"without_interests\":true},\"6\":{\"installment_value\":17416.666666667,\"installment_value_cents\":1741666.6666667,\"interest\":0,\"total_value\":104500,\"without_interests\":true}},\"Pagos Personalizados\":{\"1\":{\"installment_value\":104500,\"installment_value_cents\":10450000,\"interest\":0,\"total_value\":104500,\"without_interests\":true}}}"}]'
-                          data-quickshop-id="quick211048292"
+                          data-variants='[{"product_id":211050206,"price_short":"$74.200,00","price_long":"$74.200,00 ARS","price_number":74200,"price_number_raw":7420000,"price_with_payment_discount_short":"$55.650,00","compare_at_price_short":"$87.500,00","compare_at_price_long":"$87.500,00 ARS","compare_at_price_number":87500,"stock":4,"sku":null,"available":true,"contact":false,"option0":"talle 1","option1":null,"option2":null,"id":901412924,"image":644767812,"image_url":"\/\/acdn.mitiendanube.com\/stores\/001\/785\/816\/products\/rodraxph-068-39cb54e610e5f109ed17146624668919-1024-1024.webp","installments_data":"{\"Pago Nube\":{\"3\":{\"installment_value\":24733.333333333,\"installment_value_cents\":2473333.3333333,\"interest\":0,\"total_value\":74200,\"without_interests\":true},\"6\":{\"installment_value\":12366.666666667,\"installment_value_cents\":1236666.6666667,\"interest\":0,\"total_value\":74200,\"without_interests\":true}},\"Pagos Personalizados\":{\"1\":{\"installment_value\":74200,\"installment_value_cents\":7420000,\"interest\":0,\"total_value\":74200,\"without_interests\":true}}}"},{"product_id":211050206,"price_short":"$74.200,00","price_long":"$74.200,00 ARS","price_number":74200,"price_number_raw":7420000,"price_with_payment_discount_short":"$55.650,00","compare_at_price_short":"$87.500,00","compare_at_price_long":"$87.500,00 ARS","compare_at_price_number":87500,"stock":0,"sku":null,"available":false,"contact":false,"option0":"talle 2","option1":null,"option2":null,"id":901412925,"image":644767812,"image_url":"\/\/acdn.mitiendanube.com\/stores\/001\/785\/816\/products\/rodraxph-068-39cb54e610e5f109ed17146624668919-1024-1024.webp","installments_data":"{\"Pago Nube\":{\"3\":{\"installment_value\":24733.333333333,\"installment_value_cents\":2473333.3333333,\"interest\":0,\"total_value\":74200,\"without_interests\":true},\"6\":{\"installment_value\":12366.666666667,\"installment_value_cents\":1236666.6666667,\"interest\":0,\"total_value\":74200,\"without_interests\":true}},\"Pagos Personalizados\":{\"1\":{\"installment_value\":74200,\"installment_value_cents\":7420000,\"interest\":0,\"total_value\":74200,\"without_interests\":true}}}"},{"product_id":211050206,"price_short":"$74.200,00","price_long":"$74.200,00 ARS","price_number":74200,"price_number_raw":7420000,"price_with_payment_discount_short":"$55.650,00","compare_at_price_short":"$87.500,00","compare_at_price_long":"$87.500,00 ARS","compare_at_price_number":87500,"stock":2,"sku":null,"available":true,"contact":false,"option0":"talle 3","option1":null,"option2":null,"id":901412926,"image":644767812,"image_url":"\/\/acdn.mitiendanube.com\/stores\/001\/785\/816\/products\/rodraxph-068-39cb54e610e5f109ed17146624668919-1024-1024.webp","installments_data":"{\"Pago Nube\":{\"3\":{\"installment_value\":24733.333333333,\"installment_value_cents\":2473333.3333333,\"interest\":0,\"total_value\":74200,\"without_interests\":true},\"6\":{\"installment_value\":12366.666666667,\"installment_value_cents\":1236666.6666667,\"interest\":0,\"total_value\":74200,\"without_interests\":true}},\"Pagos Personalizados\":{\"1\":{\"installment_value\":74200,\"installment_value_cents\":7420000,\"interest\":0,\"total_value\":74200,\"without_interests\":true}}}"}]'
+                          data-quickshop-id="quick211050206"
                         >
-                          <div className="js-item-with-secondary-image item-image">
+                          <div className="js-item-with-secondary-image item-image item-with-two-images">
                             <div
                               style={{ paddingBottom: "125.03052503053%" }}
                               className="js-item-image-padding position-relative"
-                              data-store="product-item-image-211048292"
+                              data-store="product-item-image-211050206"
                             >
                               <a
-                                href="https://barnesindustries.com.ar/productos/proximamente-08-05-new-collection8/"
-                                title="WOOL JACKET GREY"
-                                aria-label="WOOL JACKET GREY"
+                                href="https://barnesindustries.com.ar/productos/proximamente-08-05-new-collection13/"
+                                title="DRILL CREWNECK"
+                                aria-label="DRILL CREWNECK"
                               >
                                 <img
                                   alt="WOOL JACKET GREY"
@@ -521,16 +531,17 @@ const page = () => {
                                 />
                                 <div className="placeholder-fade"></div>
                                 <img
-                                  alt="WOOL JACKET GREY"
+                                  alt="DRILL CREWNECK"
                                   data-sizes="auto"
-                                  
-                                  data-srcset="//acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-026-3ebb200cb552d3d7dc17146618660967-240-0.webp 240w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-026-3ebb200cb552d3d7dc17146618660967-320-0.webp 320w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-026-3ebb200cb552d3d7dc17146618660967-480-0.webp 480w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-026-3ebb200cb552d3d7dc17146618660967-640-0.webp 640w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-026-3ebb200cb552d3d7dc17146618660967-1024-1024.webp 1024w"
-                                  className="js-item-image js-item-image-secondary lazyautosizes lazyload img-absolute img-absolute-centered fade-in item-image-secondary"
+                                  data-srcset="//acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-240-0.webp 240w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-320-0.webp 320w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-480-0.webp 480w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-640-0.webp 640w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-1024-1024.webp 1024w"
+                                  className="js-item-image js-item-image-secondary lazyautosizes img-absolute img-absolute-centered fade-in item-image-secondary lazyloaded"
                                   sizes="310px"
-                                  style={{ display: "none" }}
+                                  style={{}}
+                                  srcSet="//acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-240-0.webp 240w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-320-0.webp 320w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-480-0.webp 480w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-640-0.webp 640w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-1024-1024.webp 1024w"
                                 />
                               </a>
                             </div>
+
                             <div className=" labels " data-store="product-item-labels">
                               <div
                                 className="js-stock-label label label-default mb-2"
@@ -542,14 +553,16 @@ const page = () => {
                                 className="js-offer-label label label-accent mb-2"
                                 data-store="product-item-offer-label"
                               >
-                                -<span className="js-offer-percentage">20</span>% OFF
+                                -<span className="js-offer-percentage">15</span>% OFF
                               </div>
                             </div>
+
                             <span
                               className="hidden"
-                              data-store="stock-product-211048292-11"
+                              data-store="stock-product-211050206-6"
                             />
                           </div>
+
                           <div className="js-item-variants hidden">
                             <form
                               className="js-product-form"
@@ -559,7 +572,7 @@ const page = () => {
                               <input
                                 type="hidden"
                                 name="add_to_cart"
-                                defaultValue={211048292}
+                                defaultValue={211050206}
                               />
                               <div className="js-product-variants js-product-quickshop-variants form-row mb-1">
                                 <div
@@ -637,7 +650,6 @@ const page = () => {
                                   </a>
                                 </div>
                               </div>
-
                               <div className="row mt-3">
                                 <div className="col-4">
                                   <div className="form-group js-quantity form-quantity">
@@ -706,37 +718,36 @@ const page = () => {
                                 </div>
                               </div>
                             </form>
-
                           </div>
 
                           <div
                             className="item-description pt-3"
-                            data-store="product-item-info-211048292"
+                            data-store="product-item-info-211050206"
                           >
                             <a
-                              href="https://barnesindustries.com.ar/productos/proximamente-08-05-new-collection8/"
-                              title="WOOL JACKET GREY"
-                              aria-label="WOOL JACKET GREY"
+                              href="https://barnesindustries.com.ar/productos/proximamente-08-05-new-collection13/"
+                              title="DRILL CREWNECK"
+                              aria-label="DRILL CREWNECK"
                               className="item-link"
                             >
                               <div
                                 className="js-item-name item-name mb-2 font-weight-bold"
-                                data-store="product-item-name-211048292"
+                                data-store="product-item-name-211050206"
                               >
-                                WOOL JACKET GREY
+                                DRILL CREWNECK
                               </div>
                               <div
                                 className="item-price-container mb-3"
-                                data-store="product-item-price-211048292"
+                                data-store="product-item-price-211050206"
                               >
                                 <span className="js-price-display item-price">
-                                  $104.500,00
+                                  $74.200,00
                                 </span>
                                 <span
                                   className="js-compare-price-display price-compare"
                                   style={{ display: "inline-block" }}
                                 >
-                                  $130.000,00
+                                  $87.500,00
                                 </span>
                                 <div className="js-max-installments-container js-max-installments item-installments mt-2">
                                   <div className="js-max-installments product-installments installment-no-interest">
@@ -749,7 +760,7 @@ const page = () => {
                                       </span>
                                     </span>
                                     <span className="js-installment-price product-installment-value">
-                                      $17.416,67
+                                      $12.366,67
                                     </span>
                                     <span>sin interés</span>
                                   </div>
@@ -759,10 +770,10 @@ const page = () => {
                                 <span
                                   data-toggle="#quickshop-modal"
                                   className="js-quickshop-modal-open js-quickshop-slide js-modal-open btn btn-link"
-                                  title="Compra rápida de WOOL JACKET GREY"
-                                  aria-label="Compra rápida de WOOL JACKET GREY"
+                                  title="Compra rápida de DRILL CREWNECK"
+                                  aria-label="Compra rápida de DRILL CREWNECK"
                                   data-component="product-list-item.add-to-cart"
-                                  data-component-value={211048292}
+                                  data-component-value={211050206}
                                 >
                                   <span className="js-open-quickshop-wording">
                                     Comprar
@@ -776,6 +787,7 @@ const page = () => {
                       </div>
                     </div>
 
+                    {/* item 3 */}
                     <div
                       className="js-item-product js-item-slide swiper-slide col-12 col-md-4 item-product col-grid"
                       data-product-type="list"
@@ -1065,6 +1077,7 @@ const page = () => {
                       </div>
                     </div>
 
+                    {/* item 4 */}
                     <div
                       className="js-item-product js-item-slide swiper-slide col-12 col-md-4 item-product col-grid"
                       data-product-type="list"
@@ -1369,6 +1382,7 @@ const page = () => {
                       </div>
                     </div>
 
+                    {/* item 5 */}
                     <div
                       className="js-item-product js-item-slide swiper-slide col-12 col-md-4 item-product col-grid"
                       data-product-type="list"
@@ -1659,6 +1673,7 @@ const page = () => {
                       </div>
                     </div>
 
+                    {/* item  */}
                     <div
                       className="js-item-product js-item-slide swiper-slide col-12 col-md-4 item-product col-grid"
                       data-product-type="list"
@@ -2038,868 +2053,909 @@ const page = () => {
           data-store="home-products-new"
         >
           <div className="container-fluid">
+
             <div className="row">
+
               <div className="col-md-3">
                 <h2 className="section-title mb-3 h3-huge h2-huge-md">MÁS VENDIDOS</h2>
               </div>
-              <div className="col-md-9">
+
+              {/* items */}
+               <div className="col-md-9">
+
                 <div className="row row-grid">
+
+                  {/* items 1*/}
                   <div
-                    className="js-item-product col-12 col-md-4 item-product col-grid"
-                    data-product-type="list"
-                    data-product-id={211048089}
-                    data-store="product-item-211048089"
-                    data-component="product-list-item"
-                    data-component-value={211048089}
-                  >
-                    <div className="item">
-                      <div
-                        className="js-product-container js-quickshop-container js-quickshop-has-variants position-relative"
-                        data-variants='[{"product_id":211048089,"price_short":"$104.500,00","price_long":"$104.500,00 ARS","price_number":104500,"price_number_raw":10450000,"price_with_payment_discount_short":"$78.375,00","compare_at_price_short":"$130.000,00","compare_at_price_long":"$130.000,00 ARS","compare_at_price_number":130000,"stock":5,"sku":null,"available":true,"contact":false,"option0":"talle 1","option1":null,"option2":null,"id":901414332,"image":644760877,"image_url":"\/\/acdn.mitiendanube.com\/stores\/001\/785\/816\/products\/rodraxph-054-829d23364f9cf3ed3c17146617651153-1024-1024.webp","installments_data":"{\"Pago Nube\":{\"3\":{\"installment_value\":34833.333333333,\"installment_value_cents\":3483333.3333333,\"interest\":0,\"total_value\":104500,\"without_interests\":true},\"6\":{\"installment_value\":17416.666666667,\"installment_value_cents\":1741666.6666667,\"interest\":0,\"total_value\":104500,\"without_interests\":true}},\"Pagos Personalizados\":{\"1\":{\"installment_value\":104500,\"installment_value_cents\":10450000,\"interest\":0,\"total_value\":104500,\"without_interests\":true}}}"},{"product_id":211048089,"price_short":"$104.500,00","price_long":"$104.500,00 ARS","price_number":104500,"price_number_raw":10450000,"price_with_payment_discount_short":"$78.375,00","compare_at_price_short":"$130.000,00","compare_at_price_long":"$130.000,00 ARS","compare_at_price_number":130000,"stock":2,"sku":null,"available":true,"contact":false,"option0":"talle 2","option1":null,"option2":null,"id":901414335,"image":644760877,"image_url":"\/\/acdn.mitiendanube.com\/stores\/001\/785\/816\/products\/rodraxph-054-829d23364f9cf3ed3c17146617651153-1024-1024.webp","installments_data":"{\"Pago Nube\":{\"3\":{\"installment_value\":34833.333333333,\"installment_value_cents\":3483333.3333333,\"interest\":0,\"total_value\":104500,\"without_interests\":true},\"6\":{\"installment_value\":17416.666666667,\"installment_value_cents\":1741666.6666667,\"interest\":0,\"total_value\":104500,\"without_interests\":true}},\"Pagos Personalizados\":{\"1\":{\"installment_value\":104500,\"installment_value_cents\":10450000,\"interest\":0,\"total_value\":104500,\"without_interests\":true}}}"},{"product_id":211048089,"price_short":"$104.500,00","price_long":"$104.500,00 ARS","price_number":104500,"price_number_raw":10450000,"price_with_payment_discount_short":"$78.375,00","compare_at_price_short":"$130.000,00","compare_at_price_long":"$130.000,00 ARS","compare_at_price_number":130000,"stock":3,"sku":null,"available":true,"contact":false,"option0":"talle 3","option1":null,"option2":null,"id":901414337,"image":644760877,"image_url":"\/\/acdn.mitiendanube.com\/stores\/001\/785\/816\/products\/rodraxph-054-829d23364f9cf3ed3c17146617651153-1024-1024.webp","installments_data":"{\"Pago Nube\":{\"3\":{\"installment_value\":34833.333333333,\"installment_value_cents\":3483333.3333333,\"interest\":0,\"total_value\":104500,\"without_interests\":true},\"6\":{\"installment_value\":17416.666666667,\"installment_value_cents\":1741666.6666667,\"interest\":0,\"total_value\":104500,\"without_interests\":true}},\"Pagos Personalizados\":{\"1\":{\"installment_value\":104500,\"installment_value_cents\":10450000,\"interest\":0,\"total_value\":104500,\"without_interests\":true}}}"}]'
-                        data-quickshop-id="quick211048089"
-                      >
-                        <div className="js-item-with-secondary-image item-image">
+                      className="js-item-product js-item-slide swiper-slide col-12 col-md-4 item-product col-grid"
+                      data-product-type="list"
+                      data-product-id={211050206}
+                      data-store="product-item-211050206"
+                      data-component="product-list-item"
+                      data-component-value={211050206}
+                    >
+                      <div className="item">
+                        <div
+                          className="js-product-container js-quickshop-container js-quickshop-has-variants position-relative"
+                          data-variants='[{"product_id":211050206,"price_short":"$74.200,00","price_long":"$74.200,00 ARS","price_number":74200,"price_number_raw":7420000,"price_with_payment_discount_short":"$55.650,00","compare_at_price_short":"$87.500,00","compare_at_price_long":"$87.500,00 ARS","compare_at_price_number":87500,"stock":4,"sku":null,"available":true,"contact":false,"option0":"talle 1","option1":null,"option2":null,"id":901412924,"image":644767812,"image_url":"\/\/acdn.mitiendanube.com\/stores\/001\/785\/816\/products\/rodraxph-068-39cb54e610e5f109ed17146624668919-1024-1024.webp","installments_data":"{\"Pago Nube\":{\"3\":{\"installment_value\":24733.333333333,\"installment_value_cents\":2473333.3333333,\"interest\":0,\"total_value\":74200,\"without_interests\":true},\"6\":{\"installment_value\":12366.666666667,\"installment_value_cents\":1236666.6666667,\"interest\":0,\"total_value\":74200,\"without_interests\":true}},\"Pagos Personalizados\":{\"1\":{\"installment_value\":74200,\"installment_value_cents\":7420000,\"interest\":0,\"total_value\":74200,\"without_interests\":true}}}"},{"product_id":211050206,"price_short":"$74.200,00","price_long":"$74.200,00 ARS","price_number":74200,"price_number_raw":7420000,"price_with_payment_discount_short":"$55.650,00","compare_at_price_short":"$87.500,00","compare_at_price_long":"$87.500,00 ARS","compare_at_price_number":87500,"stock":0,"sku":null,"available":false,"contact":false,"option0":"talle 2","option1":null,"option2":null,"id":901412925,"image":644767812,"image_url":"\/\/acdn.mitiendanube.com\/stores\/001\/785\/816\/products\/rodraxph-068-39cb54e610e5f109ed17146624668919-1024-1024.webp","installments_data":"{\"Pago Nube\":{\"3\":{\"installment_value\":24733.333333333,\"installment_value_cents\":2473333.3333333,\"interest\":0,\"total_value\":74200,\"without_interests\":true},\"6\":{\"installment_value\":12366.666666667,\"installment_value_cents\":1236666.6666667,\"interest\":0,\"total_value\":74200,\"without_interests\":true}},\"Pagos Personalizados\":{\"1\":{\"installment_value\":74200,\"installment_value_cents\":7420000,\"interest\":0,\"total_value\":74200,\"without_interests\":true}}}"},{"product_id":211050206,"price_short":"$74.200,00","price_long":"$74.200,00 ARS","price_number":74200,"price_number_raw":7420000,"price_with_payment_discount_short":"$55.650,00","compare_at_price_short":"$87.500,00","compare_at_price_long":"$87.500,00 ARS","compare_at_price_number":87500,"stock":2,"sku":null,"available":true,"contact":false,"option0":"talle 3","option1":null,"option2":null,"id":901412926,"image":644767812,"image_url":"\/\/acdn.mitiendanube.com\/stores\/001\/785\/816\/products\/rodraxph-068-39cb54e610e5f109ed17146624668919-1024-1024.webp","installments_data":"{\"Pago Nube\":{\"3\":{\"installment_value\":24733.333333333,\"installment_value_cents\":2473333.3333333,\"interest\":0,\"total_value\":74200,\"without_interests\":true},\"6\":{\"installment_value\":12366.666666667,\"installment_value_cents\":1236666.6666667,\"interest\":0,\"total_value\":74200,\"without_interests\":true}},\"Pagos Personalizados\":{\"1\":{\"installment_value\":74200,\"installment_value_cents\":7420000,\"interest\":0,\"total_value\":74200,\"without_interests\":true}}}"}]'
+                          data-quickshop-id="quick211050206"
+                        >
+                          <div className="js-item-with-secondary-image item-image item-with-two-images">
+                            <div
+                              style={{ paddingBottom: "125.03052503053%" }}
+                              className="js-item-image-padding position-relative"
+                              data-store="product-item-image-211050206"
+                            >
+                              <a
+                                href="https://barnesindustries.com.ar/productos/proximamente-08-05-new-collection13/"
+                                title="DRILL CREWNECK"
+                                aria-label="DRILL CREWNECK"
+                              >
+                                <img
+                                  alt="DRILL CREWNECK"
+                                  data-expand={-10}
+                                  
+                                  data-srcset="//acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-240-0.webp 240w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-320-0.webp 320w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-480-0.webp 480w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-640-0.webp 640w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-1024-1024.webp 1024w"
+                                  className="js-item-image lazyautosizes img-absolute img-absolute-centered fade-in item-image-primary lazyloaded"
+                                  width={1638}
+                                  height={2048}
+                                  sizes="310px"
+                                  srcSet="//acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-240-0.webp 240w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-320-0.webp 320w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-480-0.webp 480w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-640-0.webp 640w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-1024-1024.webp 1024w"
+                                />
+                                <div className="placeholder-fade"></div>
+                                <img
+                                  alt="DRILL CREWNECK"
+                                  data-sizes="auto"
+                                  data-srcset="//acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-240-0.webp 240w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-320-0.webp 320w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-480-0.webp 480w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-640-0.webp 640w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-1024-1024.webp 1024w"
+                                  className="js-item-image js-item-image-secondary lazyautosizes img-absolute img-absolute-centered fade-in item-image-secondary lazyloaded"
+                                  sizes="310px"
+                                  style={{}}
+                                  srcSet="//acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-240-0.webp 240w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-320-0.webp 320w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-480-0.webp 480w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-640-0.webp 640w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-1024-1024.webp 1024w"
+                                />
+                              </a>
+                            </div>
+
+                            <div className=" labels " data-store="product-item-labels">
+                              <div
+                                className="js-stock-label label label-default mb-2"
+                                style={{ display: "none" }}
+                              >
+                                Sin stock
+                              </div>
+                              <div
+                                className="js-offer-label label label-accent mb-2"
+                                data-store="product-item-offer-label"
+                              >
+                                -<span className="js-offer-percentage">15</span>% OFF
+                              </div>
+                            </div>
+
+                            <span
+                              className="hidden"
+                              data-store="stock-product-211050206-6"
+                            />
+                          </div>
+
+                          <div className="js-item-variants hidden">
+                            <form
+                              className="js-product-form"
+                              method="post"
+                              action="https://barnesindustries.com.ar/comprar/"
+                            >
+                              <input
+                                type="hidden"
+                                name="add_to_cart"
+                                defaultValue={211050206}
+                              />
+                              <div className="js-product-variants js-product-quickshop-variants form-row mb-1">
+                                <div
+                                  className="js-product-variants-group  col-12 mb-2  "
+                                  data-variation-id={0}
+                                >
+                                  <div className="form-group  d-none">
+                                    <label
+                                      className="form-label "
+                                      htmlFor="variation_1"
+                                    >
+                                      Talle
+                                    </label>
+                                    <select
+                                      id="variation_1"
+                                      className="form-select js-variation-option js-refresh-installment-data "
+                                      name="variation[0]"
+                                    >
+                                      <option value="talle 1" selected={true}>
+                                        talle 1
+                                      </option>
+                                      <option value="talle 2">talle 2</option>
+                                      <option value="talle 3">talle 3</option>
+                                    </select>
+                                    <div className="form-select-icon">
+                                      <svg className="icon-inline icon-xs icon-w-14">
+                                        <use xlinkHref="#chevron-down" />
+                                      </svg>
+                                    </div>
+                                  </div>
+                                  <label className="form-label">
+                                    Talle:{" "}
+                                    <strong className="js-insta-variation-label">
+                                      talle 1
+                                    </strong>
+                                  </label>
+                                  <a
+                                    data-option="talle 1"
+                                    className="js-insta-variant btn btn-variant selected"
+                                    title="talle 1"
+                                    data-variation-id={0}
+                                  >
+                                    <span
+                                      className="btn-variant-content "
+                                      data-name="talle 1"
+                                    >
+                                      talle 1
+                                    </span>
+                                  </a>
+                                  <a
+                                    data-option="talle 2"
+                                    className="js-insta-variant btn btn-variant"
+                                    title="talle 2"
+                                    data-variation-id={0}
+                                  >
+                                    <span
+                                      className="btn-variant-content "
+                                      data-name="talle 2"
+                                    >
+                                      talle 2
+                                    </span>
+                                  </a>
+                                  <a
+                                    data-option="talle 3"
+                                    className="js-insta-variant btn btn-variant"
+                                    title="talle 3"
+                                    data-variation-id={0}
+                                  >
+                                    <span
+                                      className="btn-variant-content "
+                                      data-name="talle 3"
+                                    >
+                                      talle 3
+                                    </span>
+                                  </a>
+                                </div>
+                              </div>
+                              <div className="row mt-3">
+                                <div className="col-4">
+                                  <div className="form-group js-quantity form-quantity">
+                                    <div
+                                      className="form-row m-0 align-items-center"
+                                      data-component="product.quantity"
+                                    >
+                                      <span
+                                        className="js-quantity-down form-quantity-icon btn icon-30px ml-1"
+                                        data-component="product.quantity.minus"
+                                      >
+                                        <svg className="icon-inline">
+                                          <use xlinkHref="#minus" />
+                                        </svg>
+                                      </span>
+                                      <div
+                                        className="form-control-container col px-0"
+                                        data-component="product.adding-amount"
+                                      >
+                                        <input
+                                          type="number"
+                                          className=" form-control js-quantity-input form-control-big form-control-inline"
+                                          autoCorrect="off"
+                                          autoCapitalize="off"
+                                          pattern="\d*"
+                                          name="quantity"
+                                          defaultValue={1}
+                                          min={1}
+                                          aria-label="Cambiar cantidad"
+                                          data-component="adding-amount.value"
+                                        />
+                                      </div>
+                                      <span
+                                        className="js-quantity-up form-quantity-icon btn icon-30px mr-1"
+                                        data-component="product.quantity.plus"
+                                      >
+                                        <svg className="icon-inline">
+                                          <use xlinkHref="#plus" />
+                                        </svg>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="col-8 pl-0">
+                                  <input
+                                    type="submit"
+                                    className="js-addtocart js-prod-submit-form btn-add-to-cart btn btn-primary btn-big w-100 cart"
+                                    defaultValue="Agregar al carrito"
+                                  />
+                                  <div
+                                    className="js-addtocart js-addtocart-placeholder btn btn-primary btn-block btn-transition btn-big disabled"
+                                    style={{ display: "none" }}
+                                  >
+                                    <div className="d-inline-block">
+                                      <span className="js-addtocart-text">
+                                        Agregar al carrito
+                                      </span>
+                                      <span className="js-addtocart-success transition-container">
+                                        ¡Listo!
+                                      </span>
+                                      <div className="js-addtocart-adding transition-container">
+                                        Agregando...
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+
                           <div
-                            style={{ paddingBottom: "125.03052503053%" }}
-                            className="js-item-image-padding position-relative"
-                            data-store="product-item-image-211048089"
+                            className="item-description pt-3"
+                            data-store="product-item-info-211050206"
                           >
                             <a
-                              href="https://barnesindustries.com.ar/productos/proximamente-08-05-new-collection7/"
-                              title="WOOL JACKET BEIGE"
-                              aria-label="WOOL JACKET BEIGE"
+                              href="https://barnesindustries.com.ar/productos/proximamente-08-05-new-collection13/"
+                              title="DRILL CREWNECK"
+                              aria-label="DRILL CREWNECK"
+                              className="item-link"
                             >
-                              <img
-                                alt="WOOL JACKET BEIGE"
-                                data-expand={-10}
-                                
-                                data-srcset="//acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-054-829d23364f9cf3ed3c17146617651153-240-0.webp 240w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-054-829d23364f9cf3ed3c17146617651153-320-0.webp 320w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-054-829d23364f9cf3ed3c17146617651153-480-0.webp 480w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-054-829d23364f9cf3ed3c17146617651153-640-0.webp 640w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-054-829d23364f9cf3ed3c17146617651153-1024-1024.webp 1024w"
-                                className="js-item-image lazyautosizes img-absolute img-absolute-centered fade-in item-image-primary lazyloaded"
-                                width={1638}
-                                height={2048}
-                                sizes="310px"
-                                srcSet="//acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-054-829d23364f9cf3ed3c17146617651153-240-0.webp 240w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-054-829d23364f9cf3ed3c17146617651153-320-0.webp 320w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-054-829d23364f9cf3ed3c17146617651153-480-0.webp 480w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-054-829d23364f9cf3ed3c17146617651153-640-0.webp 640w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-054-829d23364f9cf3ed3c17146617651153-1024-1024.webp 1024w"
-                              />
-                              <div className="placeholder-fade"></div>
-                              <img
-                                alt="WOOL JACKET BEIGE"
-                                data-sizes="auto"
-                                
-                                data-srcset="//acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-055-4e7126ce0e38ba575017146617690975-240-0.webp 240w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-055-4e7126ce0e38ba575017146617690975-320-0.webp 320w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-055-4e7126ce0e38ba575017146617690975-480-0.webp 480w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-055-4e7126ce0e38ba575017146617690975-640-0.webp 640w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-055-4e7126ce0e38ba575017146617690975-1024-1024.webp 1024w"
-                                className="js-item-image js-item-image-secondary lazyautosizes lazyload img-absolute img-absolute-centered fade-in item-image-secondary"
-                                sizes="310px"
-                                style={{ display: "none" }}
-                              />
+                              <div
+                                className="js-item-name item-name mb-2 font-weight-bold"
+                                data-store="product-item-name-211050206"
+                              >
+                                DRILL CREWNECK
+                              </div>
+                              <div
+                                className="item-price-container mb-3"
+                                data-store="product-item-price-211050206"
+                              >
+                                <span className="js-price-display item-price">
+                                  $74.200,00
+                                </span>
+                                <span
+                                  className="js-compare-price-display price-compare"
+                                  style={{ display: "inline-block" }}
+                                >
+                                  $87.500,00
+                                </span>
+                                <div className="js-max-installments-container js-max-installments item-installments mt-2">
+                                  <div className="js-max-installments product-installments installment-no-interest">
+                                    <span className="js-installment-amount product-installment-amount">
+                                      6
+                                    </span>
+                                    <span>
+                                      <span className="installment-short-separator">
+                                        x
+                                      </span>
+                                    </span>
+                                    <span className="js-installment-price product-installment-value">
+                                      $12.366,67
+                                    </span>
+                                    <span>sin interés</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="item-actions d-block">
+                                <span
+                                  data-toggle="#quickshop-modal"
+                                  className="js-quickshop-modal-open js-quickshop-slide js-modal-open btn btn-link"
+                                  title="Compra rápida de DRILL CREWNECK"
+                                  aria-label="Compra rápida de DRILL CREWNECK"
+                                  data-component="product-list-item.add-to-cart"
+                                  data-component-value={211050206}
+                                >
+                                  <span className="js-open-quickshop-wording">
+                                    Comprar
+                                  </span>
+                                </span>
+                              </div>
                             </a>
                           </div>
-                          <div className=" labels " data-store="product-item-labels">
-                            <div
-                              className="js-stock-label label label-default mb-2"
-                              style={{ display: "none" }}
-                            >
-                              Sin stock
-                            </div>
-                            <div
-                              className="js-offer-label label label-accent mb-2"
-                              data-store="product-item-offer-label"
-                            >
-                              -<span className="js-offer-percentage">20</span>% OFF
-                            </div>
-                          </div>
-                          <span
-                            className="hidden"
-                            data-store="stock-product-211048089-10"
-                          />
-                        </div>
-                        <div className="js-item-variants hidden">
-                          <form
-                            className="js-product-form"
-                            method="post"
-                            action="https://barnesindustries.com.ar/comprar/"
-                          >
-                            <input
-                              type="hidden"
-                              name="add_to_cart"
-                              defaultValue={211048089}
-                            />
-                            <div className="js-product-variants js-product-quickshop-variants form-row mb-1">
-                              <div
-                                className="js-product-variants-group  col-12 mb-2  "
-                                data-variation-id={0}
-                              >
-                                <div className="form-group  d-none">
-                                  <label className="form-label " htmlFor="variation_1">
-                                    Talle
-                                  </label>
-                                  <select
-                                    id="variation_1"
-                                    className="form-select js-variation-option js-refresh-installment-data "
-                                    name="variation[0]"
-                                  >
-                                    <option value="talle 1" selected={true}>
-                                      talle 1
-                                    </option>
-                                    <option value="talle 2">talle 2</option>
-                                    <option value="talle 3">talle 3</option>
-                                  </select>
-                                  <div className="form-select-icon">
-                                    <svg className="icon-inline icon-xs icon-w-14">
-                                      <use xlinkHref="#chevron-down" />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <label className="form-label">
-                                  Talle:{" "}
-                                  <strong className="js-insta-variation-label">
-                                    talle 1
-                                  </strong>
-                                </label>
-                                <a
-                                  data-option="talle 1"
-                                  className="js-insta-variant btn btn-variant selected"
-                                  title="talle 1"
-                                  data-variation-id={0}
-                                >
-                                  <span
-                                    className="btn-variant-content "
-                                    data-name="talle 1"
-                                  >
-                                    talle 1
-                                  </span>
-                                </a>
-                                <a
-                                  data-option="talle 2"
-                                  className="js-insta-variant btn btn-variant"
-                                  title="talle 2"
-                                  data-variation-id={0}
-                                >
-                                  <span
-                                    className="btn-variant-content "
-                                    data-name="talle 2"
-                                  >
-                                    talle 2
-                                  </span>
-                                </a>
-                                <a
-                                  data-option="talle 3"
-                                  className="js-insta-variant btn btn-variant"
-                                  title="talle 3"
-                                  data-variation-id={0}
-                                >
-                                  <span
-                                    className="btn-variant-content "
-                                    data-name="talle 3"
-                                  >
-                                    talle 3
-                                  </span>
-                                </a>
-                              </div>
-                            </div>
-                            <div className="row mt-3">
-                              <div className="col-4">
-                                <div className="form-group js-quantity form-quantity">
-                                  <div
-                                    className="form-row m-0 align-items-center"
-                                    data-component="product.quantity"
-                                  >
-                                    <span
-                                      className="js-quantity-down form-quantity-icon btn icon-30px ml-1"
-                                      data-component="product.quantity.minus"
-                                    >
-                                      <svg className="icon-inline">
-                                        <use xlinkHref="#minus" />
-                                      </svg>
-                                    </span>
-                                    <div
-                                      className="form-control-container col px-0"
-                                      data-component="product.adding-amount"
-                                    >
-                                      <input
-                                        type="number"
-                                        className=" form-control js-quantity-input form-control-big form-control-inline"
-                                        autoCorrect="off"
-                                        autoCapitalize="off"
-                                        pattern="\d*"
-                                        name="quantity"
-                                        defaultValue={1}
-                                        min={1}
-                                        aria-label="Cambiar cantidad"
-                                        data-component="adding-amount.value"
-                                      />
-                                    </div>
-                                    <span
-                                      className="js-quantity-up form-quantity-icon btn icon-30px mr-1"
-                                      data-component="product.quantity.plus"
-                                    >
-                                      <svg className="icon-inline">
-                                        <use xlinkHref="#plus" />
-                                      </svg>
-                                    </span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="col-8 pl-0">
-                                <input
-                                  type="submit"
-                                  className="js-addtocart js-prod-submit-form btn-add-to-cart btn btn-primary btn-big w-100 cart"
-                                  defaultValue="Agregar al carrito"
-                                />
-                                <div
-                                  className="js-addtocart js-addtocart-placeholder btn btn-primary btn-block btn-transition btn-big disabled"
-                                  style={{ display: "none" }}
-                                >
-                                  <div className="d-inline-block">
-                                    <span className="js-addtocart-text">
-                                      Agregar al carrito
-                                    </span>
-                                    <span className="js-addtocart-success transition-container">
-                                      ¡Listo!
-                                    </span>
-                                    <div className="js-addtocart-adding transition-container">
-                                      Agregando...
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
-                        <div
-                          className="item-description pt-3"
-                          data-store="product-item-info-211048089"
-                        >
-                          <a
-                            href="https://barnesindustries.com.ar/productos/proximamente-08-05-new-collection7/"
-                            title="WOOL JACKET BEIGE"
-                            aria-label="WOOL JACKET BEIGE"
-                            className="item-link"
-                          >
-                            <div
-                              className="js-item-name item-name mb-2 font-weight-bold"
-                              data-store="product-item-name-211048089"
-                            >
-                              WOOL JACKET BEIGE
-                            </div>
-                            <div
-                              className="item-price-container mb-3"
-                              data-store="product-item-price-211048089"
-                            >
-                              <span className="js-price-display item-price">
-                                $104.500,00
-                              </span>
-                              <span
-                                className="js-compare-price-display price-compare"
-                                style={{ display: "inline-block" }}
-                              >
-                                $130.000,00
-                              </span>
-                              <div className="js-max-installments-container js-max-installments item-installments mt-2">
-                                <div className="js-max-installments product-installments installment-no-interest">
-                                  <span className="js-installment-amount product-installment-amount">
-                                    6
-                                  </span>
-                                  <span>
-                                    <span className="installment-short-separator">
-                                      x
-                                    </span>
-                                  </span>
-                                  <span className="js-installment-price product-installment-value">
-                                    $17.416,67
-                                  </span>
-                                  <span>sin interés</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="item-actions d-block">
-                              <span
-                                data-toggle="#quickshop-modal"
-                                className="js-quickshop-modal-open  js-modal-open btn btn-link"
-                                title="Compra rápida de WOOL JACKET BEIGE"
-                                aria-label="Compra rápida de WOOL JACKET BEIGE"
-                                data-component="product-list-item.add-to-cart"
-                                data-component-value={211048089}
-                              >
-                                <span className="js-open-quickshop-wording">
-                                  Comprar
-                                </span>
-                              </span>
-                            </div>
-                          </a>
+
                         </div>
                       </div>
-                    </div>
                   </div>
+
+                  {/* items 2*/}
                   <div
-                    className="js-item-product col-12 col-md-4 item-product col-grid"
-                    data-product-type="list"
-                    data-product-id={211050003}
-                    data-store="product-item-211050003"
-                    data-component="product-list-item"
-                    data-component-value={211050003}
-                  >
-                    <div className="item">
-                      <div
-                        className="js-product-container js-quickshop-container js-quickshop-has-variants position-relative"
-                        data-variants='[{"product_id":211050003,"price_short":"$62.500,00","price_long":"$62.500,00 ARS","price_number":62500,"price_number_raw":6250000,"price_with_payment_discount_short":"$46.875,00","compare_at_price_short":"$73.500,00","compare_at_price_long":"$73.500,00 ARS","compare_at_price_number":73500,"stock":5,"sku":null,"available":true,"contact":false,"option0":"talle 1","option1":null,"option2":null,"id":901413148,"image":644766853,"image_url":"\/\/acdn.mitiendanube.com\/stores\/001\/785\/816\/products\/rodraxph-089-62c7d7d7d644f2fea817146623557036-1024-1024.webp","installments_data":"{\"Pago Nube\":{\"3\":{\"installment_value\":20833.333333333,\"installment_value_cents\":2083333.3333333,\"interest\":0,\"total_value\":62500,\"without_interests\":true},\"6\":{\"installment_value\":10416.666666667,\"installment_value_cents\":1041666.6666667,\"interest\":0,\"total_value\":62500,\"without_interests\":true}},\"Pagos Personalizados\":{\"1\":{\"installment_value\":62500,\"installment_value_cents\":6250000,\"interest\":0,\"total_value\":62500,\"without_interests\":true}}}"},{"product_id":211050003,"price_short":"$62.500,00","price_long":"$62.500,00 ARS","price_number":62500,"price_number_raw":6250000,"price_with_payment_discount_short":"$46.875,00","compare_at_price_short":"$73.500,00","compare_at_price_long":"$73.500,00 ARS","compare_at_price_number":73500,"stock":1,"sku":null,"available":true,"contact":false,"option0":"talle 2","option1":null,"option2":null,"id":901413149,"image":644766853,"image_url":"\/\/acdn.mitiendanube.com\/stores\/001\/785\/816\/products\/rodraxph-089-62c7d7d7d644f2fea817146623557036-1024-1024.webp","installments_data":"{\"Pago Nube\":{\"3\":{\"installment_value\":20833.333333333,\"installment_value_cents\":2083333.3333333,\"interest\":0,\"total_value\":62500,\"without_interests\":true},\"6\":{\"installment_value\":10416.666666667,\"installment_value_cents\":1041666.6666667,\"interest\":0,\"total_value\":62500,\"without_interests\":true}},\"Pagos Personalizados\":{\"1\":{\"installment_value\":62500,\"installment_value_cents\":6250000,\"interest\":0,\"total_value\":62500,\"without_interests\":true}}}"},{"product_id":211050003,"price_short":"$62.500,00","price_long":"$62.500,00 ARS","price_number":62500,"price_number_raw":6250000,"price_with_payment_discount_short":"$46.875,00","compare_at_price_short":"$73.500,00","compare_at_price_long":"$73.500,00 ARS","compare_at_price_number":73500,"stock":5,"sku":null,"available":true,"contact":false,"option0":"talle 3","option1":null,"option2":null,"id":901413151,"image":644766853,"image_url":"\/\/acdn.mitiendanube.com\/stores\/001\/785\/816\/products\/rodraxph-089-62c7d7d7d644f2fea817146623557036-1024-1024.webp","installments_data":"{\"Pago Nube\":{\"3\":{\"installment_value\":20833.333333333,\"installment_value_cents\":2083333.3333333,\"interest\":0,\"total_value\":62500,\"without_interests\":true},\"6\":{\"installment_value\":10416.666666667,\"installment_value_cents\":1041666.6666667,\"interest\":0,\"total_value\":62500,\"without_interests\":true}},\"Pagos Personalizados\":{\"1\":{\"installment_value\":62500,\"installment_value_cents\":6250000,\"interest\":0,\"total_value\":62500,\"without_interests\":true}}}"}]'
-                        data-quickshop-id="quick211050003"
-                      >
-                        <div className="js-item-with-secondary-image item-image">
+                      className="js-item-product js-item-slide swiper-slide col-12 col-md-4 item-product col-grid"
+                      data-product-type="list"
+                      data-product-id={211050206}
+                      data-store="product-item-211050206"
+                      data-component="product-list-item"
+                      data-component-value={211050206}
+                    >
+                      <div className="item">
+                        <div
+                          className="js-product-container js-quickshop-container js-quickshop-has-variants position-relative"
+                          data-variants='[{"product_id":211050206,"price_short":"$74.200,00","price_long":"$74.200,00 ARS","price_number":74200,"price_number_raw":7420000,"price_with_payment_discount_short":"$55.650,00","compare_at_price_short":"$87.500,00","compare_at_price_long":"$87.500,00 ARS","compare_at_price_number":87500,"stock":4,"sku":null,"available":true,"contact":false,"option0":"talle 1","option1":null,"option2":null,"id":901412924,"image":644767812,"image_url":"\/\/acdn.mitiendanube.com\/stores\/001\/785\/816\/products\/rodraxph-068-39cb54e610e5f109ed17146624668919-1024-1024.webp","installments_data":"{\"Pago Nube\":{\"3\":{\"installment_value\":24733.333333333,\"installment_value_cents\":2473333.3333333,\"interest\":0,\"total_value\":74200,\"without_interests\":true},\"6\":{\"installment_value\":12366.666666667,\"installment_value_cents\":1236666.6666667,\"interest\":0,\"total_value\":74200,\"without_interests\":true}},\"Pagos Personalizados\":{\"1\":{\"installment_value\":74200,\"installment_value_cents\":7420000,\"interest\":0,\"total_value\":74200,\"without_interests\":true}}}"},{"product_id":211050206,"price_short":"$74.200,00","price_long":"$74.200,00 ARS","price_number":74200,"price_number_raw":7420000,"price_with_payment_discount_short":"$55.650,00","compare_at_price_short":"$87.500,00","compare_at_price_long":"$87.500,00 ARS","compare_at_price_number":87500,"stock":0,"sku":null,"available":false,"contact":false,"option0":"talle 2","option1":null,"option2":null,"id":901412925,"image":644767812,"image_url":"\/\/acdn.mitiendanube.com\/stores\/001\/785\/816\/products\/rodraxph-068-39cb54e610e5f109ed17146624668919-1024-1024.webp","installments_data":"{\"Pago Nube\":{\"3\":{\"installment_value\":24733.333333333,\"installment_value_cents\":2473333.3333333,\"interest\":0,\"total_value\":74200,\"without_interests\":true},\"6\":{\"installment_value\":12366.666666667,\"installment_value_cents\":1236666.6666667,\"interest\":0,\"total_value\":74200,\"without_interests\":true}},\"Pagos Personalizados\":{\"1\":{\"installment_value\":74200,\"installment_value_cents\":7420000,\"interest\":0,\"total_value\":74200,\"without_interests\":true}}}"},{"product_id":211050206,"price_short":"$74.200,00","price_long":"$74.200,00 ARS","price_number":74200,"price_number_raw":7420000,"price_with_payment_discount_short":"$55.650,00","compare_at_price_short":"$87.500,00","compare_at_price_long":"$87.500,00 ARS","compare_at_price_number":87500,"stock":2,"sku":null,"available":true,"contact":false,"option0":"talle 3","option1":null,"option2":null,"id":901412926,"image":644767812,"image_url":"\/\/acdn.mitiendanube.com\/stores\/001\/785\/816\/products\/rodraxph-068-39cb54e610e5f109ed17146624668919-1024-1024.webp","installments_data":"{\"Pago Nube\":{\"3\":{\"installment_value\":24733.333333333,\"installment_value_cents\":2473333.3333333,\"interest\":0,\"total_value\":74200,\"without_interests\":true},\"6\":{\"installment_value\":12366.666666667,\"installment_value_cents\":1236666.6666667,\"interest\":0,\"total_value\":74200,\"without_interests\":true}},\"Pagos Personalizados\":{\"1\":{\"installment_value\":74200,\"installment_value_cents\":7420000,\"interest\":0,\"total_value\":74200,\"without_interests\":true}}}"}]'
+                          data-quickshop-id="quick211050206"
+                        >
+                          <div className="js-item-with-secondary-image item-image item-with-two-images">
+                            <div
+                              style={{ paddingBottom: "125.03052503053%" }}
+                              className="js-item-image-padding position-relative"
+                              data-store="product-item-image-211050206"
+                            >
+                              <a
+                                href="https://barnesindustries.com.ar/productos/proximamente-08-05-new-collection13/"
+                                title="DRILL CREWNECK"
+                                aria-label="DRILL CREWNECK"
+                              >
+                                <img
+                                  alt="DRILL CREWNECK"
+                                  data-expand={-10}
+                                  
+                                  data-srcset="//acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-240-0.webp 240w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-320-0.webp 320w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-480-0.webp 480w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-640-0.webp 640w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-1024-1024.webp 1024w"
+                                  className="js-item-image lazyautosizes img-absolute img-absolute-centered fade-in item-image-primary lazyloaded"
+                                  width={1638}
+                                  height={2048}
+                                  sizes="310px"
+                                  srcSet="//acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-240-0.webp 240w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-320-0.webp 320w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-480-0.webp 480w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-640-0.webp 640w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-1024-1024.webp 1024w"
+                                />
+                                <div className="placeholder-fade"></div>
+                                <img
+                                  alt="DRILL CREWNECK"
+                                  data-sizes="auto"
+                                  data-srcset="//acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-240-0.webp 240w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-320-0.webp 320w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-480-0.webp 480w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-640-0.webp 640w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-1024-1024.webp 1024w"
+                                  className="js-item-image js-item-image-secondary lazyautosizes img-absolute img-absolute-centered fade-in item-image-secondary lazyloaded"
+                                  sizes="310px"
+                                  style={{}}
+                                  srcSet="//acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-240-0.webp 240w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-320-0.webp 320w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-480-0.webp 480w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-640-0.webp 640w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-1024-1024.webp 1024w"
+                                />
+                              </a>
+                            </div>
+
+                            <div className=" labels " data-store="product-item-labels">
+                              <div
+                                className="js-stock-label label label-default mb-2"
+                                style={{ display: "none" }}
+                              >
+                                Sin stock
+                              </div>
+                              <div
+                                className="js-offer-label label label-accent mb-2"
+                                data-store="product-item-offer-label"
+                              >
+                                -<span className="js-offer-percentage">15</span>% OFF
+                              </div>
+                            </div>
+
+                            <span
+                              className="hidden"
+                              data-store="stock-product-211050206-6"
+                            />
+                          </div>
+
+                          <div className="js-item-variants hidden">
+                            <form
+                              className="js-product-form"
+                              method="post"
+                              action="https://barnesindustries.com.ar/comprar/"
+                            >
+                              <input
+                                type="hidden"
+                                name="add_to_cart"
+                                defaultValue={211050206}
+                              />
+                              <div className="js-product-variants js-product-quickshop-variants form-row mb-1">
+                                <div
+                                  className="js-product-variants-group  col-12 mb-2  "
+                                  data-variation-id={0}
+                                >
+                                  <div className="form-group  d-none">
+                                    <label
+                                      className="form-label "
+                                      htmlFor="variation_1"
+                                    >
+                                      Talle
+                                    </label>
+                                    <select
+                                      id="variation_1"
+                                      className="form-select js-variation-option js-refresh-installment-data "
+                                      name="variation[0]"
+                                    >
+                                      <option value="talle 1" selected={true}>
+                                        talle 1
+                                      </option>
+                                      <option value="talle 2">talle 2</option>
+                                      <option value="talle 3">talle 3</option>
+                                    </select>
+                                    <div className="form-select-icon">
+                                      <svg className="icon-inline icon-xs icon-w-14">
+                                        <use xlinkHref="#chevron-down" />
+                                      </svg>
+                                    </div>
+                                  </div>
+                                  <label className="form-label">
+                                    Talle:{" "}
+                                    <strong className="js-insta-variation-label">
+                                      talle 1
+                                    </strong>
+                                  </label>
+                                  <a
+                                    data-option="talle 1"
+                                    className="js-insta-variant btn btn-variant selected"
+                                    title="talle 1"
+                                    data-variation-id={0}
+                                  >
+                                    <span
+                                      className="btn-variant-content "
+                                      data-name="talle 1"
+                                    >
+                                      talle 1
+                                    </span>
+                                  </a>
+                                  <a
+                                    data-option="talle 2"
+                                    className="js-insta-variant btn btn-variant"
+                                    title="talle 2"
+                                    data-variation-id={0}
+                                  >
+                                    <span
+                                      className="btn-variant-content "
+                                      data-name="talle 2"
+                                    >
+                                      talle 2
+                                    </span>
+                                  </a>
+                                  <a
+                                    data-option="talle 3"
+                                    className="js-insta-variant btn btn-variant"
+                                    title="talle 3"
+                                    data-variation-id={0}
+                                  >
+                                    <span
+                                      className="btn-variant-content "
+                                      data-name="talle 3"
+                                    >
+                                      talle 3
+                                    </span>
+                                  </a>
+                                </div>
+                              </div>
+                              <div className="row mt-3">
+                                <div className="col-4">
+                                  <div className="form-group js-quantity form-quantity">
+                                    <div
+                                      className="form-row m-0 align-items-center"
+                                      data-component="product.quantity"
+                                    >
+                                      <span
+                                        className="js-quantity-down form-quantity-icon btn icon-30px ml-1"
+                                        data-component="product.quantity.minus"
+                                      >
+                                        <svg className="icon-inline">
+                                          <use xlinkHref="#minus" />
+                                        </svg>
+                                      </span>
+                                      <div
+                                        className="form-control-container col px-0"
+                                        data-component="product.adding-amount"
+                                      >
+                                        <input
+                                          type="number"
+                                          className=" form-control js-quantity-input form-control-big form-control-inline"
+                                          autoCorrect="off"
+                                          autoCapitalize="off"
+                                          pattern="\d*"
+                                          name="quantity"
+                                          defaultValue={1}
+                                          min={1}
+                                          aria-label="Cambiar cantidad"
+                                          data-component="adding-amount.value"
+                                        />
+                                      </div>
+                                      <span
+                                        className="js-quantity-up form-quantity-icon btn icon-30px mr-1"
+                                        data-component="product.quantity.plus"
+                                      >
+                                        <svg className="icon-inline">
+                                          <use xlinkHref="#plus" />
+                                        </svg>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="col-8 pl-0">
+                                  <input
+                                    type="submit"
+                                    className="js-addtocart js-prod-submit-form btn-add-to-cart btn btn-primary btn-big w-100 cart"
+                                    defaultValue="Agregar al carrito"
+                                  />
+                                  <div
+                                    className="js-addtocart js-addtocart-placeholder btn btn-primary btn-block btn-transition btn-big disabled"
+                                    style={{ display: "none" }}
+                                  >
+                                    <div className="d-inline-block">
+                                      <span className="js-addtocart-text">
+                                        Agregar al carrito
+                                      </span>
+                                      <span className="js-addtocart-success transition-container">
+                                        ¡Listo!
+                                      </span>
+                                      <div className="js-addtocart-adding transition-container">
+                                        Agregando...
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+
                           <div
-                            style={{ paddingBottom: "125.03052503053%" }}
-                            className="js-item-image-padding position-relative"
-                            data-store="product-item-image-211050003"
+                            className="item-description pt-3"
+                            data-store="product-item-info-211050206"
                           >
                             <a
-                              href="https://barnesindustries.com.ar/productos/proximamente-08-05-new-collection12/"
-                              title="TEXTURED PANT"
-                              aria-label="TEXTURED PANT"
+                              href="https://barnesindustries.com.ar/productos/proximamente-08-05-new-collection13/"
+                              title="DRILL CREWNECK"
+                              aria-label="DRILL CREWNECK"
+                              className="item-link"
                             >
-                              <img
-                                alt="TEXTURED PANT"
-                                data-expand={-10}
-                                data-srcset="//acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-089-62c7d7d7d644f2fea817146623557036-240-0.webp 240w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-089-62c7d7d7d644f2fea817146623557036-320-0.webp 320w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-089-62c7d7d7d644f2fea817146623557036-480-0.webp 480w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-089-62c7d7d7d644f2fea817146623557036-640-0.webp 640w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-089-62c7d7d7d644f2fea817146623557036-1024-1024.webp 1024w"
-                                className="js-item-image lazyautosizes img-absolute img-absolute-centered fade-in item-image-primary lazyloaded"
-                                width={1638}
-                                height={2048}
-                                sizes="310px"
-                                srcSet="//acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-089-62c7d7d7d644f2fea817146623557036-240-0.webp 240w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-089-62c7d7d7d644f2fea817146623557036-320-0.webp 320w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-089-62c7d7d7d644f2fea817146623557036-480-0.webp 480w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-089-62c7d7d7d644f2fea817146623557036-640-0.webp 640w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-089-62c7d7d7d644f2fea817146623557036-1024-1024.webp 1024w"
-                              />
-                              <div className="placeholder-fade"></div>
-                              <img
-                                alt="TEXTURED PANT"
-                                data-sizes="auto"
-                                data-srcset="//acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-087-fcd0760dc423e33a8117146623586452-240-0.webp 240w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-087-fcd0760dc423e33a8117146623586452-320-0.webp 320w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-087-fcd0760dc423e33a8117146623586452-480-0.webp 480w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-087-fcd0760dc423e33a8117146623586452-640-0.webp 640w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-087-fcd0760dc423e33a8117146623586452-1024-1024.webp 1024w"
-                                className="js-item-image js-item-image-secondary lazyautosizes lazyload img-absolute img-absolute-centered fade-in item-image-secondary"
-                                sizes="310px"
-                                style={{ display: "none" }}
-                              />
+                              <div
+                                className="js-item-name item-name mb-2 font-weight-bold"
+                                data-store="product-item-name-211050206"
+                              >
+                                DRILL CREWNECK
+                              </div>
+                              <div
+                                className="item-price-container mb-3"
+                                data-store="product-item-price-211050206"
+                              >
+                                <span className="js-price-display item-price">
+                                  $74.200,00
+                                </span>
+                                <span
+                                  className="js-compare-price-display price-compare"
+                                  style={{ display: "inline-block" }}
+                                >
+                                  $87.500,00
+                                </span>
+                                <div className="js-max-installments-container js-max-installments item-installments mt-2">
+                                  <div className="js-max-installments product-installments installment-no-interest">
+                                    <span className="js-installment-amount product-installment-amount">
+                                      6
+                                    </span>
+                                    <span>
+                                      <span className="installment-short-separator">
+                                        x
+                                      </span>
+                                    </span>
+                                    <span className="js-installment-price product-installment-value">
+                                      $12.366,67
+                                    </span>
+                                    <span>sin interés</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="item-actions d-block">
+                                <span
+                                  data-toggle="#quickshop-modal"
+                                  className="js-quickshop-modal-open js-quickshop-slide js-modal-open btn btn-link"
+                                  title="Compra rápida de DRILL CREWNECK"
+                                  aria-label="Compra rápida de DRILL CREWNECK"
+                                  data-component="product-list-item.add-to-cart"
+                                  data-component-value={211050206}
+                                >
+                                  <span className="js-open-quickshop-wording">
+                                    Comprar
+                                  </span>
+                                </span>
+                              </div>
                             </a>
                           </div>
-                          <div className=" labels " data-store="product-item-labels">
-                            <div
-                              className="js-stock-label label label-default mb-2"
-                              style={{ display: "none" }}
-                            >
-                              Sin stock
-                            </div>
-                            <div
-                              className="js-offer-label label label-accent mb-2"
-                              data-store="product-item-offer-label"
-                            >
-                              -<span className="js-offer-percentage">15</span>% OFF
-                            </div>
-                          </div>
-                          <span
-                            className="hidden"
-                            data-store="stock-product-211050003-11"
-                          />
-                        </div>
-                        <div className="js-item-variants hidden">
-                          <form
-                            className="js-product-form"
-                            method="post"
-                            action="https://barnesindustries.com.ar/comprar/"
-                          >
-                            <input
-                              type="hidden"
-                              name="add_to_cart"
-                              defaultValue={211050003}
-                            />
-                            <div className="js-product-variants js-product-quickshop-variants form-row mb-1">
-                              <div
-                                className="js-product-variants-group  col-12 mb-2  "
-                                data-variation-id={0}
-                              >
-                                <div className="form-group  d-none">
-                                  <label className="form-label " htmlFor="variation_1">
-                                    Talle
-                                  </label>
-                                  <select
-                                    id="variation_1"
-                                    className="form-select js-variation-option js-refresh-installment-data "
-                                    name="variation[0]"
-                                  >
-                                    <option value="talle 1" selected={true}>
-                                      talle 1
-                                    </option>
-                                    <option value="talle 2">talle 2</option>
-                                    <option value="talle 3">talle 3</option>
-                                  </select>
-                                  <div className="form-select-icon">
-                                    <svg className="icon-inline icon-xs icon-w-14">
-                                      <use xlinkHref="#chevron-down" />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <label className="form-label">
-                                  Talle:{" "}
-                                  <strong className="js-insta-variation-label">
-                                    talle 1
-                                  </strong>
-                                </label>
-                                <a
-                                  data-option="talle 1"
-                                  className="js-insta-variant btn btn-variant selected"
-                                  title="talle 1"
-                                  data-variation-id={0}
-                                >
-                                  <span
-                                    className="btn-variant-content "
-                                    data-name="talle 1"
-                                  >
-                                    talle 1
-                                  </span>
-                                </a>
-                                <a
-                                  data-option="talle 2"
-                                  className="js-insta-variant btn btn-variant"
-                                  title="talle 2"
-                                  data-variation-id={0}
-                                >
-                                  <span
-                                    className="btn-variant-content "
-                                    data-name="talle 2"
-                                  >
-                                    talle 2
-                                  </span>
-                                </a>
-                                <a
-                                  data-option="talle 3"
-                                  className="js-insta-variant btn btn-variant"
-                                  title="talle 3"
-                                  data-variation-id={0}
-                                >
-                                  <span
-                                    className="btn-variant-content "
-                                    data-name="talle 3"
-                                  >
-                                    talle 3
-                                  </span>
-                                </a>
-                              </div>
-                            </div>
-                            <div className="row mt-3">
-                              <div className="col-4">
-                                <div className="form-group js-quantity form-quantity">
-                                  <div
-                                    className="form-row m-0 align-items-center"
-                                    data-component="product.quantity"
-                                  >
-                                    <span
-                                      className="js-quantity-down form-quantity-icon btn icon-30px ml-1"
-                                      data-component="product.quantity.minus"
-                                    >
-                                      <svg className="icon-inline">
-                                        <use xlinkHref="#minus" />
-                                      </svg>
-                                    </span>
-                                    <div
-                                      className="form-control-container col px-0"
-                                      data-component="product.adding-amount"
-                                    >
-                                      <input
-                                        type="number"
-                                        className=" form-control js-quantity-input form-control-big form-control-inline"
-                                        autoCorrect="off"
-                                        autoCapitalize="off"
-                                        pattern="\d*"
-                                        name="quantity"
-                                        defaultValue={1}
-                                        min={1}
-                                        aria-label="Cambiar cantidad"
-                                        data-component="adding-amount.value"
-                                      />
-                                    </div>
-                                    <span
-                                      className="js-quantity-up form-quantity-icon btn icon-30px mr-1"
-                                      data-component="product.quantity.plus"
-                                    >
-                                      <svg className="icon-inline">
-                                        <use xlinkHref="#plus" />
-                                      </svg>
-                                    </span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="col-8 pl-0">
-                                <input
-                                  type="submit"
-                                  className="js-addtocart js-prod-submit-form btn-add-to-cart btn btn-primary btn-big w-100 cart"
-                                  defaultValue="Agregar al carrito"
-                                />
-                                <div
-                                  className="js-addtocart js-addtocart-placeholder btn btn-primary btn-block btn-transition btn-big disabled"
-                                  style={{ display: "none" }}
-                                >
-                                  <div className="d-inline-block">
-                                    <span className="js-addtocart-text">
-                                      Agregar al carrito
-                                    </span>
-                                    <span className="js-addtocart-success transition-container">
-                                      ¡Listo!
-                                    </span>
-                                    <div className="js-addtocart-adding transition-container">
-                                      Agregando...
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
-                        <div
-                          className="item-description pt-3"
-                          data-store="product-item-info-211050003"
-                        >
-                          <a
-                            href="https://barnesindustries.com.ar/productos/proximamente-08-05-new-collection12/"
-                            title="TEXTURED PANT"
-                            aria-label="TEXTURED PANT"
-                            className="item-link"
-                          >
-                            <div
-                              className="js-item-name item-name mb-2 font-weight-bold"
-                              data-store="product-item-name-211050003"
-                            >
-                              TEXTURED PANT
-                            </div>
-                            <div
-                              className="item-price-container mb-3"
-                              data-store="product-item-price-211050003"
-                            >
-                              <span className="js-price-display item-price">
-                                $62.500,00
-                              </span>
-                              <span
-                                className="js-compare-price-display price-compare"
-                                style={{ display: "inline-block" }}
-                              >
-                                $73.500,00
-                              </span>
-                              <div className="js-max-installments-container js-max-installments item-installments mt-2">
-                                <div className="js-max-installments product-installments installment-no-interest">
-                                  <span className="js-installment-amount product-installment-amount">
-                                    6
-                                  </span>
-                                  <span>
-                                    <span className="installment-short-separator">
-                                      x
-                                    </span>
-                                  </span>
-                                  <span className="js-installment-price product-installment-value">
-                                    $10.416,67
-                                  </span>
-                                  <span>sin interés</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="item-actions d-block">
-                              <span
-                                data-toggle="#quickshop-modal"
-                                className="js-quickshop-modal-open  js-modal-open btn btn-link"
-                                title="Compra rápida de TEXTURED PANT"
-                                aria-label="Compra rápida de TEXTURED PANT"
-                                data-component="product-list-item.add-to-cart"
-                                data-component-value={211050003}
-                              >
-                                <span className="js-open-quickshop-wording">
-                                  Comprar
-                                </span>
-                              </span>
-                            </div>
-                          </a>
+
                         </div>
                       </div>
-                    </div>
                   </div>
+
+                  {/* items 3*/}
                   <div
-                    className="js-item-product col-12 col-md-4 item-product col-grid"
-                    data-product-type="list"
-                    data-product-id={210682520}
-                    data-store="product-item-210682520"
-                    data-component="product-list-item"
-                    data-component-value={210682520}
-                  >
-                    <div className="item">
-                      <div
-                        className="js-product-container js-quickshop-container js-quickshop-has-variants position-relative"
-                        data-variants='[{"product_id":210682520,"price_short":"$38.800,00","price_long":"$38.800,00 ARS","price_number":38800,"price_number_raw":3880000,"price_with_payment_discount_short":"$29.100,00","compare_at_price_short":"$48.500,00","compare_at_price_long":"$48.500,00 ARS","compare_at_price_number":48500,"stock":16,"sku":null,"available":true,"contact":false,"option0":"talle 1","option1":null,"option2":null,"id":901416424,"image":642877534,"image_url":"\/\/acdn.mitiendanube.com\/stores\/001\/785\/816\/products\/rodraxph-085-a92358a094c5c3b5e917143934862239-1024-1024.webp","installments_data":"{\"Pago Nube\":{\"3\":{\"installment_value\":12933.333333333,\"installment_value_cents\":1293333.3333333,\"interest\":0,\"total_value\":38800,\"without_interests\":true},\"6\":{\"installment_value\":6466.6666666667,\"installment_value_cents\":646666.66666667,\"interest\":0,\"total_value\":38800,\"without_interests\":true}},\"Pagos Personalizados\":{\"1\":{\"installment_value\":38800,\"installment_value_cents\":3880000,\"interest\":0,\"total_value\":38800,\"without_interests\":true}}}"},{"product_id":210682520,"price_short":"$38.800,00","price_long":"$38.800,00 ARS","price_number":38800,"price_number_raw":3880000,"price_with_payment_discount_short":"$29.100,00","compare_at_price_short":"$48.500,00","compare_at_price_long":"$48.500,00 ARS","compare_at_price_number":48500,"stock":25,"sku":null,"available":true,"contact":false,"option0":"talle 2","option1":null,"option2":null,"id":901416426,"image":642877534,"image_url":"\/\/acdn.mitiendanube.com\/stores\/001\/785\/816\/products\/rodraxph-085-a92358a094c5c3b5e917143934862239-1024-1024.webp","installments_data":"{\"Pago Nube\":{\"3\":{\"installment_value\":12933.333333333,\"installment_value_cents\":1293333.3333333,\"interest\":0,\"total_value\":38800,\"without_interests\":true},\"6\":{\"installment_value\":6466.6666666667,\"installment_value_cents\":646666.66666667,\"interest\":0,\"total_value\":38800,\"without_interests\":true}},\"Pagos Personalizados\":{\"1\":{\"installment_value\":38800,\"installment_value_cents\":3880000,\"interest\":0,\"total_value\":38800,\"without_interests\":true}}}"},{"product_id":210682520,"price_short":"$38.800,00","price_long":"$38.800,00 ARS","price_number":38800,"price_number_raw":3880000,"price_with_payment_discount_short":"$29.100,00","compare_at_price_short":"$48.500,00","compare_at_price_long":"$48.500,00 ARS","compare_at_price_number":48500,"stock":17,"sku":null,"available":true,"contact":false,"option0":"talle 3","option1":null,"option2":null,"id":901416429,"image":642877534,"image_url":"\/\/acdn.mitiendanube.com\/stores\/001\/785\/816\/products\/rodraxph-085-a92358a094c5c3b5e917143934862239-1024-1024.webp","installments_data":"{\"Pago Nube\":{\"3\":{\"installment_value\":12933.333333333,\"installment_value_cents\":1293333.3333333,\"interest\":0,\"total_value\":38800,\"without_interests\":true},\"6\":{\"installment_value\":6466.6666666667,\"installment_value_cents\":646666.66666667,\"interest\":0,\"total_value\":38800,\"without_interests\":true}},\"Pagos Personalizados\":{\"1\":{\"installment_value\":38800,\"installment_value_cents\":3880000,\"interest\":0,\"total_value\":38800,\"without_interests\":true}}}"}]'
-                        data-quickshop-id="quick210682520"
-                      >
-                        <div className="js-item-with-secondary-image item-image">
+                      className="js-item-product js-item-slide swiper-slide col-12 col-md-4 item-product col-grid"
+                      data-product-type="list"
+                      data-product-id={211050206}
+                      data-store="product-item-211050206"
+                      data-component="product-list-item"
+                      data-component-value={211050206}
+                    >
+                      <div className="item">
+                        <div
+                          className="js-product-container js-quickshop-container js-quickshop-has-variants position-relative"
+                          data-variants='[{"product_id":211050206,"price_short":"$74.200,00","price_long":"$74.200,00 ARS","price_number":74200,"price_number_raw":7420000,"price_with_payment_discount_short":"$55.650,00","compare_at_price_short":"$87.500,00","compare_at_price_long":"$87.500,00 ARS","compare_at_price_number":87500,"stock":4,"sku":null,"available":true,"contact":false,"option0":"talle 1","option1":null,"option2":null,"id":901412924,"image":644767812,"image_url":"\/\/acdn.mitiendanube.com\/stores\/001\/785\/816\/products\/rodraxph-068-39cb54e610e5f109ed17146624668919-1024-1024.webp","installments_data":"{\"Pago Nube\":{\"3\":{\"installment_value\":24733.333333333,\"installment_value_cents\":2473333.3333333,\"interest\":0,\"total_value\":74200,\"without_interests\":true},\"6\":{\"installment_value\":12366.666666667,\"installment_value_cents\":1236666.6666667,\"interest\":0,\"total_value\":74200,\"without_interests\":true}},\"Pagos Personalizados\":{\"1\":{\"installment_value\":74200,\"installment_value_cents\":7420000,\"interest\":0,\"total_value\":74200,\"without_interests\":true}}}"},{"product_id":211050206,"price_short":"$74.200,00","price_long":"$74.200,00 ARS","price_number":74200,"price_number_raw":7420000,"price_with_payment_discount_short":"$55.650,00","compare_at_price_short":"$87.500,00","compare_at_price_long":"$87.500,00 ARS","compare_at_price_number":87500,"stock":0,"sku":null,"available":false,"contact":false,"option0":"talle 2","option1":null,"option2":null,"id":901412925,"image":644767812,"image_url":"\/\/acdn.mitiendanube.com\/stores\/001\/785\/816\/products\/rodraxph-068-39cb54e610e5f109ed17146624668919-1024-1024.webp","installments_data":"{\"Pago Nube\":{\"3\":{\"installment_value\":24733.333333333,\"installment_value_cents\":2473333.3333333,\"interest\":0,\"total_value\":74200,\"without_interests\":true},\"6\":{\"installment_value\":12366.666666667,\"installment_value_cents\":1236666.6666667,\"interest\":0,\"total_value\":74200,\"without_interests\":true}},\"Pagos Personalizados\":{\"1\":{\"installment_value\":74200,\"installment_value_cents\":7420000,\"interest\":0,\"total_value\":74200,\"without_interests\":true}}}"},{"product_id":211050206,"price_short":"$74.200,00","price_long":"$74.200,00 ARS","price_number":74200,"price_number_raw":7420000,"price_with_payment_discount_short":"$55.650,00","compare_at_price_short":"$87.500,00","compare_at_price_long":"$87.500,00 ARS","compare_at_price_number":87500,"stock":2,"sku":null,"available":true,"contact":false,"option0":"talle 3","option1":null,"option2":null,"id":901412926,"image":644767812,"image_url":"\/\/acdn.mitiendanube.com\/stores\/001\/785\/816\/products\/rodraxph-068-39cb54e610e5f109ed17146624668919-1024-1024.webp","installments_data":"{\"Pago Nube\":{\"3\":{\"installment_value\":24733.333333333,\"installment_value_cents\":2473333.3333333,\"interest\":0,\"total_value\":74200,\"without_interests\":true},\"6\":{\"installment_value\":12366.666666667,\"installment_value_cents\":1236666.6666667,\"interest\":0,\"total_value\":74200,\"without_interests\":true}},\"Pagos Personalizados\":{\"1\":{\"installment_value\":74200,\"installment_value_cents\":7420000,\"interest\":0,\"total_value\":74200,\"without_interests\":true}}}"}]'
+                          data-quickshop-id="quick211050206"
+                        >
+                          <div className="js-item-with-secondary-image item-image item-with-two-images">
+                            <div
+                              style={{ paddingBottom: "125.03052503053%" }}
+                              className="js-item-image-padding position-relative"
+                              data-store="product-item-image-211050206"
+                            >
+                              <a
+                                href="https://barnesindustries.com.ar/productos/proximamente-08-05-new-collection13/"
+                                title="DRILL CREWNECK"
+                                aria-label="DRILL CREWNECK"
+                              >
+                                <img
+                                  alt="DRILL CREWNECK"
+                                  data-expand={-10}
+                                  
+                                  data-srcset="//acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-240-0.webp 240w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-320-0.webp 320w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-480-0.webp 480w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-640-0.webp 640w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-1024-1024.webp 1024w"
+                                  className="js-item-image lazyautosizes img-absolute img-absolute-centered fade-in item-image-primary lazyloaded"
+                                  width={1638}
+                                  height={2048}
+                                  sizes="310px"
+                                  srcSet="//acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-240-0.webp 240w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-320-0.webp 320w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-480-0.webp 480w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-640-0.webp 640w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-068-39cb54e610e5f109ed17146624668919-1024-1024.webp 1024w"
+                                />
+                                <div className="placeholder-fade"></div>
+                                <img
+                                  alt="DRILL CREWNECK"
+                                  data-sizes="auto"
+                                  data-srcset="//acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-240-0.webp 240w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-320-0.webp 320w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-480-0.webp 480w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-640-0.webp 640w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-1024-1024.webp 1024w"
+                                  className="js-item-image js-item-image-secondary lazyautosizes img-absolute img-absolute-centered fade-in item-image-secondary lazyloaded"
+                                  sizes="310px"
+                                  style={{}}
+                                  srcSet="//acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-240-0.webp 240w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-320-0.webp 320w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-480-0.webp 480w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-640-0.webp 640w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-071-ff631b7f0a08a89d1617146624700152-1024-1024.webp 1024w"
+                                />
+                              </a>
+                            </div>
+
+                            <div className=" labels " data-store="product-item-labels">
+                              <div
+                                className="js-stock-label label label-default mb-2"
+                                style={{ display: "none" }}
+                              >
+                                Sin stock
+                              </div>
+                              <div
+                                className="js-offer-label label label-accent mb-2"
+                                data-store="product-item-offer-label"
+                              >
+                                -<span className="js-offer-percentage">15</span>% OFF
+                              </div>
+                            </div>
+
+                            <span
+                              className="hidden"
+                              data-store="stock-product-211050206-6"
+                            />
+                          </div>
+
+                          <div className="js-item-variants hidden">
+                            <form
+                              className="js-product-form"
+                              method="post"
+                              action="https://barnesindustries.com.ar/comprar/"
+                            >
+                              <input
+                                type="hidden"
+                                name="add_to_cart"
+                                defaultValue={211050206}
+                              />
+                              <div className="js-product-variants js-product-quickshop-variants form-row mb-1">
+                                <div
+                                  className="js-product-variants-group  col-12 mb-2  "
+                                  data-variation-id={0}
+                                >
+                                  <div className="form-group  d-none">
+                                    <label
+                                      className="form-label "
+                                      htmlFor="variation_1"
+                                    >
+                                      Talle
+                                    </label>
+                                    <select
+                                      id="variation_1"
+                                      className="form-select js-variation-option js-refresh-installment-data "
+                                      name="variation[0]"
+                                    >
+                                      <option value="talle 1" selected={true}>
+                                        talle 1
+                                      </option>
+                                      <option value="talle 2">talle 2</option>
+                                      <option value="talle 3">talle 3</option>
+                                    </select>
+                                    <div className="form-select-icon">
+                                      <svg className="icon-inline icon-xs icon-w-14">
+                                        <use xlinkHref="#chevron-down" />
+                                      </svg>
+                                    </div>
+                                  </div>
+                                  <label className="form-label">
+                                    Talle:{" "}
+                                    <strong className="js-insta-variation-label">
+                                      talle 1
+                                    </strong>
+                                  </label>
+                                  <a
+                                    data-option="talle 1"
+                                    className="js-insta-variant btn btn-variant selected"
+                                    title="talle 1"
+                                    data-variation-id={0}
+                                  >
+                                    <span
+                                      className="btn-variant-content "
+                                      data-name="talle 1"
+                                    >
+                                      talle 1
+                                    </span>
+                                  </a>
+                                  <a
+                                    data-option="talle 2"
+                                    className="js-insta-variant btn btn-variant"
+                                    title="talle 2"
+                                    data-variation-id={0}
+                                  >
+                                    <span
+                                      className="btn-variant-content "
+                                      data-name="talle 2"
+                                    >
+                                      talle 2
+                                    </span>
+                                  </a>
+                                  <a
+                                    data-option="talle 3"
+                                    className="js-insta-variant btn btn-variant"
+                                    title="talle 3"
+                                    data-variation-id={0}
+                                  >
+                                    <span
+                                      className="btn-variant-content "
+                                      data-name="talle 3"
+                                    >
+                                      talle 3
+                                    </span>
+                                  </a>
+                                </div>
+                              </div>
+                              <div className="row mt-3">
+                                <div className="col-4">
+                                  <div className="form-group js-quantity form-quantity">
+                                    <div
+                                      className="form-row m-0 align-items-center"
+                                      data-component="product.quantity"
+                                    >
+                                      <span
+                                        className="js-quantity-down form-quantity-icon btn icon-30px ml-1"
+                                        data-component="product.quantity.minus"
+                                      >
+                                        <svg className="icon-inline">
+                                          <use xlinkHref="#minus" />
+                                        </svg>
+                                      </span>
+                                      <div
+                                        className="form-control-container col px-0"
+                                        data-component="product.adding-amount"
+                                      >
+                                        <input
+                                          type="number"
+                                          className=" form-control js-quantity-input form-control-big form-control-inline"
+                                          autoCorrect="off"
+                                          autoCapitalize="off"
+                                          pattern="\d*"
+                                          name="quantity"
+                                          defaultValue={1}
+                                          min={1}
+                                          aria-label="Cambiar cantidad"
+                                          data-component="adding-amount.value"
+                                        />
+                                      </div>
+                                      <span
+                                        className="js-quantity-up form-quantity-icon btn icon-30px mr-1"
+                                        data-component="product.quantity.plus"
+                                      >
+                                        <svg className="icon-inline">
+                                          <use xlinkHref="#plus" />
+                                        </svg>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="col-8 pl-0">
+                                  <input
+                                    type="submit"
+                                    className="js-addtocart js-prod-submit-form btn-add-to-cart btn btn-primary btn-big w-100 cart"
+                                    defaultValue="Agregar al carrito"
+                                  />
+                                  <div
+                                    className="js-addtocart js-addtocart-placeholder btn btn-primary btn-block btn-transition btn-big disabled"
+                                    style={{ display: "none" }}
+                                  >
+                                    <div className="d-inline-block">
+                                      <span className="js-addtocart-text">
+                                        Agregar al carrito
+                                      </span>
+                                      <span className="js-addtocart-success transition-container">
+                                        ¡Listo!
+                                      </span>
+                                      <div className="js-addtocart-adding transition-container">
+                                        Agregando...
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+
                           <div
-                            style={{ paddingBottom: "125.03052503053%" }}
-                            className="js-item-image-padding position-relative"
-                            data-store="product-item-image-210682520"
+                            className="item-description pt-3"
+                            data-store="product-item-info-211050206"
                           >
                             <a
-                              href="https://barnesindustries.com.ar/productos/remera-micro-waffle-heavy-weight-rose/"
-                              title="REMERA MICRO-WAFFLE"
-                              aria-label="REMERA MICRO-WAFFLE"
+                              href="https://barnesindustries.com.ar/productos/proximamente-08-05-new-collection13/"
+                              title="DRILL CREWNECK"
+                              aria-label="DRILL CREWNECK"
+                              className="item-link"
                             >
-                              <img
-                                alt="REMERA MICRO-WAFFLE"
-                                data-expand={-10}
-                                data-srcset="//acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-085-a92358a094c5c3b5e917143934862239-240-0.webp 240w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-085-a92358a094c5c3b5e917143934862239-320-0.webp 320w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-085-a92358a094c5c3b5e917143934862239-480-0.webp 480w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-085-a92358a094c5c3b5e917143934862239-640-0.webp 640w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-085-a92358a094c5c3b5e917143934862239-1024-1024.webp 1024w"
-                                className="js-item-image lazyautosizes lazyload img-absolute img-absolute-centered fade-in item-image-primary"
-                                width={1638}
-                                height={2048}
-                                sizes="388px"
-                              />
-                              <div className="placeholder-fade"></div>
-                              <img
-                                alt="REMERA MICRO-WAFFLE"
-                                data-sizes="auto"
-                                data-srcset="//acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-088-15b427032b352085af17143934936134-240-0.jpg 240w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-088-15b427032b352085af17143934936134-320-0.jpg 320w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-088-15b427032b352085af17143934936134-480-0.jpg 480w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-088-15b427032b352085af17143934936134-640-0.jpg 640w, //acdn.mitiendanube.com/stores/001/785/816/products/rodraxph-088-15b427032b352085af17143934936134-1024-1024.jpg 1024w"
-                                className="js-item-image js-item-image-secondary lazyautosizes lazyload img-absolute img-absolute-centered fade-in item-image-secondary"
-                                sizes="310px"
-                                style={{ display: "none" }}
-                              />
+                              <div
+                                className="js-item-name item-name mb-2 font-weight-bold"
+                                data-store="product-item-name-211050206"
+                              >
+                                DRILL CREWNECK
+                              </div>
+                              <div
+                                className="item-price-container mb-3"
+                                data-store="product-item-price-211050206"
+                              >
+                                <span className="js-price-display item-price">
+                                  $74.200,00
+                                </span>
+                                <span
+                                  className="js-compare-price-display price-compare"
+                                  style={{ display: "inline-block" }}
+                                >
+                                  $87.500,00
+                                </span>
+                                <div className="js-max-installments-container js-max-installments item-installments mt-2">
+                                  <div className="js-max-installments product-installments installment-no-interest">
+                                    <span className="js-installment-amount product-installment-amount">
+                                      6
+                                    </span>
+                                    <span>
+                                      <span className="installment-short-separator">
+                                        x
+                                      </span>
+                                    </span>
+                                    <span className="js-installment-price product-installment-value">
+                                      $12.366,67
+                                    </span>
+                                    <span>sin interés</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="item-actions d-block">
+                                <span
+                                  data-toggle="#quickshop-modal"
+                                  className="js-quickshop-modal-open js-quickshop-slide js-modal-open btn btn-link"
+                                  title="Compra rápida de DRILL CREWNECK"
+                                  aria-label="Compra rápida de DRILL CREWNECK"
+                                  data-component="product-list-item.add-to-cart"
+                                  data-component-value={211050206}
+                                >
+                                  <span className="js-open-quickshop-wording">
+                                    Comprar
+                                  </span>
+                                </span>
+                              </div>
                             </a>
                           </div>
-                          <div className=" labels " data-store="product-item-labels">
-                            <div
-                              className="js-stock-label label label-default mb-2"
-                              style={{ display: "none" }}
-                            >
-                              Sin stock
-                            </div>
-                            <div
-                              className="js-offer-label label label-accent mb-2"
-                              data-store="product-item-offer-label"
-                            >
-                              -<span className="js-offer-percentage">20</span>% OFF
-                            </div>
-                          </div>
-                          <span
-                            className="hidden"
-                            data-store="stock-product-210682520-58"
-                          />
-                        </div>
 
-                        <div className="js-item-variants hidden">
-                          <form
-                            className="js-product-form"
-                            method="post"
-                            action="https://barnesindustries.com.ar/comprar/"
-                          >
-                            <input
-                              type="hidden"
-                              name="add_to_cart"
-                              defaultValue={210682520}
-                            />
-                            <div className="js-product-variants js-product-quickshop-variants form-row mb-1">
-                              <div
-                                className="js-product-variants-group  col-12 mb-2  "
-                                data-variation-id={0}
-                              >
-                                <div className="form-group  d-none">
-                                  <label className="form-label " htmlFor="variation_1">
-                                    Talle
-                                  </label>
-                                  <select
-                                    id="variation_1"
-                                    className="form-select js-variation-option js-refresh-installment-data "
-                                    name="variation[0]"
-                                  >
-                                    <option value="talle 1" selected={true}>
-                                      talle 1
-                                    </option>
-                                    <option value="talle 2">talle 2</option>
-                                    <option value="talle 3">talle 3</option>
-                                  </select>
-                                  <div className="form-select-icon">
-                                    <svg className="icon-inline icon-xs icon-w-14">
-                                      <use xlinkHref="#chevron-down" />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <label className="form-label">
-                                  Talle:{" "}
-                                  <strong className="js-insta-variation-label">
-                                    talle 1
-                                  </strong>
-                                </label>
-                                <a
-                                  data-option="talle 1"
-                                  className="js-insta-variant btn btn-variant selected"
-                                  title="talle 1"
-                                  data-variation-id={0}
-                                >
-                                  <span
-                                    className="btn-variant-content "
-                                    data-name="talle 1"
-                                  >
-                                    talle 1
-                                  </span>
-                                </a>
-                                <a
-                                  data-option="talle 2"
-                                  className="js-insta-variant btn btn-variant"
-                                  title="talle 2"
-                                  data-variation-id={0}
-                                >
-                                  <span
-                                    className="btn-variant-content "
-                                    data-name="talle 2"
-                                  >
-                                    talle 2
-                                  </span>
-                                </a>
-                                <a
-                                  data-option="talle 3"
-                                  className="js-insta-variant btn btn-variant"
-                                  title="talle 3"
-                                  data-variation-id={0}
-                                >
-                                  <span
-                                    className="btn-variant-content "
-                                    data-name="talle 3"
-                                  >
-                                    talle 3
-                                  </span>
-                                </a>
-                              </div>
-                            </div>
-                            <div className="row mt-3">
-                              <div className="col-4">
-                                <div className="form-group js-quantity form-quantity">
-                                  <div
-                                    className="form-row m-0 align-items-center"
-                                    data-component="product.quantity"
-                                  >
-                                    <span
-                                      className="js-quantity-down form-quantity-icon btn icon-30px ml-1"
-                                      data-component="product.quantity.minus"
-                                    >
-                                      <svg className="icon-inline">
-                                        <use xlinkHref="#minus" />
-                                      </svg>
-                                    </span>
-                                    <div
-                                      className="form-control-container col px-0"
-                                      data-component="product.adding-amount"
-                                    >
-                                      <input
-                                        type="number"
-                                        className=" form-control js-quantity-input form-control-big form-control-inline"
-                                        autoCorrect="off"
-                                        autoCapitalize="off"
-                                        pattern="\d*"
-                                        name="quantity"
-                                        defaultValue={1}
-                                        min={1}
-                                        aria-label="Cambiar cantidad"
-                                        data-component="adding-amount.value"
-                                      />
-                                    </div>
-                                    <span
-                                      className="js-quantity-up form-quantity-icon btn icon-30px mr-1"
-                                      data-component="product.quantity.plus"
-                                    >
-                                      <svg className="icon-inline">
-                                        <use xlinkHref="#plus" />
-                                      </svg>
-                                    </span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="col-8 pl-0">
-                                <input
-                                  type="submit"
-                                  className="js-addtocart js-prod-submit-form btn-add-to-cart btn btn-primary btn-big w-100 cart"
-                                  defaultValue="Agregar al carrito"
-                                />
-                                <div
-                                  className="js-addtocart js-addtocart-placeholder btn btn-primary btn-block btn-transition btn-big disabled"
-                                  style={{ display: "none" }}
-                                >
-                                  <div className="d-inline-block">
-                                    <span className="js-addtocart-text">
-                                      Agregar al carrito
-                                    </span>
-                                    <span className="js-addtocart-success transition-container">
-                                      ¡Listo!
-                                    </span>
-                                    <div className="js-addtocart-adding transition-container">
-                                      Agregando...
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </form>
                         </div>
-
-                        <div
-                          className="item-description pt-3"
-                          data-store="product-item-info-210682520"
-                        >
-                          <a
-                            href="https://barnesindustries.com.ar/productos/remera-micro-waffle-heavy-weight-rose/"
-                            title="REMERA MICRO-WAFFLE"
-                            aria-label="REMERA MICRO-WAFFLE"
-                            className="item-link"
-                          >
-                            <div
-                              className="js-item-name item-name mb-2 font-weight-bold"
-                              data-store="product-item-name-210682520"
-                            >
-                              REMERA MICRO-WAFFLE
-                            </div>
-                            <div
-                              className="item-price-container mb-3"
-                              data-store="product-item-price-210682520"
-                            >
-                              <span className="js-price-display item-price">
-                                $38.800,00
-                              </span>
-                              <span
-                                className="js-compare-price-display price-compare"
-                                style={{ display: "inline-block" }}
-                              >
-                                $48.500,00
-                              </span>
-                              <div className="js-max-installments-container js-max-installments item-installments mt-2">
-                                <div className="js-max-installments product-installments installment-no-interest">
-                                  <span className="js-installment-amount product-installment-amount">
-                                    6
-                                  </span>
-                                  <span>
-                                    <span className="installment-short-separator">
-                                      x
-                                    </span>
-                                  </span>
-                                  <span className="js-installment-price product-installment-value">
-                                    $6.466,67
-                                  </span>
-                                  <span>sin interés</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="item-actions d-block">
-                              <span
-                                data-toggle="#quickshop-modal"
-                                className="js-quickshop-modal-open  js-modal-open btn btn-link"
-                                title="Compra rápida de REMERA MICRO-WAFFLE"
-                                aria-label="Compra rápida de REMERA MICRO-WAFFLE"
-                                data-component="product-list-item.add-to-cart"
-                                data-component-value={210682520}
-                              >
-                                <span className="js-open-quickshop-wording">
-                                  Comprar
-                                </span>
-                              </span>
-                            </div>
-                          </a>
-                        </div>
-
                       </div>
-                    </div>
                   </div>
+                  
                 </div>
-              </div>
+
+              </div> 
+
             </div>
+
           </div>
         </section>
 

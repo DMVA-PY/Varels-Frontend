@@ -1,4 +1,3 @@
-'use client'
 import React, { ChangeEvent, FormEvent, useState } from 'react'
 import '/home/vare/project/farm_varels/Varels-Frontend/src/app/(routes)/account/register/register.css'
 import '/home/vare/project/farm_varels/Varels-Frontend/src/styles/tailwind_only_css.css'
@@ -9,13 +8,12 @@ import { toast } from 'react-toastify'
 import { useRouter } from 'next/navigation'
 import Spinner from '/home/vare/project/farm_varels/Varels-Frontend/src/components/common/Spinner'
 import RegisterForm  from '/home/vare/project/farm_varels/Varels-Frontend/src/components/forms/RegisterForm';
+import { useRegister } from '@/hooks'
 
+const Page = () => {
 
-const page = () => {
-  
   return (
     <div className="login-container">
-
         <div className="container">
           <section className="page-header py-4 " data-store="page-title">
             <div className="breadcrumbs ">
@@ -28,23 +26,28 @@ const page = () => {
           </section>
         </div>
 
-        <div className="smaller-container">
+        {/* form section */}
+        <section className="account-page mb-4 login_form">
           <div className="container">
             <div className="row-page">
-              <div className="">
-                  <h1 className="">Crear cuenta</h1>
-                  <div className="mb-4">Comprá más rápido y llevá el control de tus pedidos, ¡en un solo lugar!</div>
-                  <RegisterForm/>
-                  <div className=" mt-2 mb-2 text-center font-small">
+
+              {/* form && messages */}
+              <div className="col-md-5 ">
+                <div className='justified-div'>
+                  <h2>Crear cuenta</h2>
+                </div>
+                    <RegisterForm/>
+                  <div className="mt-2 mb-2 text-center font-small">
                     ¿Ya tenés una cuenta?
                     <Link href="/account/login/" className="btn-link font-small mb-2 ml-1">Iniciá sesión </Link>
-                  </div>
+                  </div>                                              
               </div>
+
             </div>
           </div>
-        </div>
+        </section>
         
       </div>
   )
 }
-export default page;
+export default Page;

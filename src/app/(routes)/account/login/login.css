@@ -1,7 +1,5 @@
 @media (min-width: 768px) {
-    .login_form {
-        margin-top: -15px;
-    }
+
     .form_class {
         width: 90%; 
         max-width: 400px; 
@@ -41,10 +39,10 @@ input:hover {
 }
 
 .login-container{
-    height: 100vh;
     padding:10px;
+    margin-bottom:25px;
 }
 .login-container-3{
-    margin-top:40px
+    margin-top:40px;
 }
 

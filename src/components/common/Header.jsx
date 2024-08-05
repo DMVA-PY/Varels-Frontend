@@ -7,7 +7,6 @@ import CarritoSmart from '/home/vare/project/farm_varels/Varels-Frontend/src/com
 
 import "/home/vare/project/farm_varels/Varels-Frontend/src/styles/async.css"
 import "/home/vare/project/farm_varels/Varels-Frontend/src/styles/critical.css"
-import MainStyles from '/home/vare/project/farm_varels/Varels-Frontend/src/styles/MainStyles.jsx' 
 
 const Header = () => {
 
@@ -27,7 +26,6 @@ const Header = () => {
 
   return (
     <div>
-
       {/* HEADER */}
       <header
         className="js-head-main head-main  head-colors position-sticky position-relative-md head-logo-center head-logo-md-center   head-md-visible-nav   transition-soft"

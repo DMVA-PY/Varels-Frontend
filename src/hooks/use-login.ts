@@ -5,6 +5,8 @@ import { useLoginMutation } from '@/redux/features/authApiSlice';
 import { setAuth } from '@/redux/features/authSlice';
 import { toast } from 'react-toastify';
 
+
+/* handles the login process  */
 export default function useLogin() {
 	const router = useRouter();
 	const dispatch = useAppDispatch();

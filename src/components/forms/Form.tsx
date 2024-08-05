@@ -1,5 +1,6 @@
 import { ChangeEvent, FormEvent } from 'react';
 import Spinner from '/home/vare/project/farm_varels/Varels-Frontend/src/components/common/Spinner';
+import Input from './Input';
 
 interface Config {
 	labelText: string;
@@ -29,7 +30,7 @@ export default function Form({
 	onSubmit,
 }: Props) {
 	return (
-		<form className='space-y-6' onSubmit={onSubmit}>
+		<form className='form-container'/*  method="post" data-store="account-login" */ onSubmit={onSubmit}>
 			{config.map(input => (
 				<Input
 					key={input.labelId}
@@ -47,7 +48,8 @@ export default function Form({
 			<div>
 				<button
 					type='submit'
-					className='flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+					className="btn btn-primary btn-big btn-block mb-3 my-3"  
+					value="Iniciar sesión"					
 					disabled={isLoading}
 				>
 					{isLoading ? <Spinner sm /> : `${btnText}`}

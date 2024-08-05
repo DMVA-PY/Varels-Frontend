@@ -1,12 +1,13 @@
 import React from 'react'
 import '/home/vare/project/farm_varels/Varels-Frontend/src/app/(routes)/account/login/login.css' 
 import Link from 'next/link'
+import { LoginForm } from '@/components/forms'
 
 const page = () => {
   return (
     <div className='login-container'>
 
-{/* 1 */}
+        {/* 1 */}
         <div className="d-none d-md-block ">
             <div className="js-alert-added-to-cart notification-floating notification-cart-container notification-hidden notification-fixed position-absolute position-fixed-md" style={{"display":"none","top":"93px"}}>
                 <div className="notification notification-primary notification-cart p-0">
@@ -628,7 +629,7 @@ const page = () => {
         </div>
 
         {/* form section */}
-        <section className="login-container-3 account-page mb-4 login_form">
+        <section className="login-container-3 account-page mb-4 login form">
 
             <div className="container">
                 <div className="row-page">
@@ -653,36 +654,46 @@ const page = () => {
                             <span className="js-too-many-attempts-countdown" />
                         </div>
 
-                
+                        <div className='justified-div'>
+                            <h2 className="">Iniciar sesión</h2>
+                        </div>
+
+                        <LoginForm/>
+                        
+                        <div className="mt-2 mb-2 text-center font-small">
+                            ¿No tenés cuenta aún?
+                            <a href="/account/register" className="btn-link btn-link font-small mb-2 ml-1">Crear cuenta</a>
+                        </div>
+
+                        {/* form 
                         <form method="post" data-store="account-login">
-                        <h1 className="h3-huge h1-huge-md">Iniciar sesión</h1>
 
                             <div >
-                            {/* EMAIL */}
-                            <label 
-                                className="form-label" 
-                                htmlFor="email">
-                                Email
-                            </label>
+                                <label 
+                                    className="form-label" 
+                                    htmlFor="email">
+                                    Email
+                                </label>
 
-                            <input 
-                            type="email" 
-                            name="email"  
-                            autoCorrect="off"
-                            autoCapitalize="off" 
-                            className="js-account-input form-control" 
-                            required placeholder="ej.: tuemail@email.com" />
+                                <input 
+                                type="email" 
+                                name="email"  
+                                autoCorrect="off"
+                                autoCapitalize="off" 
+                                className="js-account-input form-control" 
+                                required placeholder="ej.: tuemail@email.com" />
                             </div>
 
-                            {/* PASSWORD */}
-                            <div className="form-group">
+                            <div >
                             <label 
                                 className="form-label" 
                                 htmlFor="password">
                                 Contraseña
                             </label>
 
-                            <input type="password" name="password" autoCorrect="off" autoCapitalize="off" autoComplete="off" className="js-account-input js-password-input form-control" required placeholder="ej.: tucontraseña" />
+                            <input type="password" name="password" autoCorrect="off" autoCapitalize="off" autoComplete="off" 
+                            className="js-account-input js-password-input form-control" 
+                            required placeholder="ej.: tucontraseña" />
                             <a aria-label="Ver contraseña" className="js-password-toggle password-toggle btn">
                                 <span className="js-password-visible password-toggle-show" style={{"display":"none"}}>
                                 Ocultar
@@ -701,11 +712,9 @@ const page = () => {
                                 <span className="js-form-spinner form-spinner icon-inline icon-spin svg-icon-mask ml-2" style={{"display":"none"}} />
                             </button>
 
-                            <div className="mt-2 mb-2 text-center font-small">
-                            ¿No tenés cuenta aún?
-                            <a href="/account/register" className="btn-link btn-link font-small mb-2 ml-1">Crear cuenta</a>
-                            </div>
+
                         </form>
+                        */}
                     </div>
                 </div>
             </div>

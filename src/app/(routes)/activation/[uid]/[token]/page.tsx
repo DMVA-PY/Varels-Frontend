@@ -3,7 +3,8 @@ import React, { ChangeEvent, FormEvent, useState } from 'react'
 import '/home/vare/project/farm_varels/Varels-Frontend/src/app/(routes)/activation/[uid]/[token]/activation.css'
 import Link from 'next/link'
 import { toast } from 'react-toastify'
-import { TiTick } from "react-icons/ti";
+import { FaCheck } from "react-icons/fa";
+
 
 const page = () => {
   
@@ -27,7 +28,7 @@ const page = () => {
       </div>
 
       <div className='account-icon'>
-        <TiTick />
+        <FaCheck />
       </div>
 
       <div className='account-icon-page'>

@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const page = () => {
   return (
-    <div className='head-main  '>
+    <div className='head-main'>
         <Header/>
         {/* Banner Main-1 */}
         <section

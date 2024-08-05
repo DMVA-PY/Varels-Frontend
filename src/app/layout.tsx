@@ -4,7 +4,6 @@ import Provider from '../redux/provider';
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Setup } from "@/components/utils";
-
 import "/home/vare/project/farm_varels/Varels-Frontend/src/styles/async.css"
 import "/home/vare/project/farm_varels/Varels-Frontend/src/styles/critical.css"
 

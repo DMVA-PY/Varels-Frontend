@@ -1,6 +1,5 @@
 .input-box {
     width: 100%;
-    max-width: 400px;
     padding: 6px 12px;
     font-size: 13px;
     color: #333;
@@ -79,6 +78,10 @@
   background-color: #0056b3;
 }
 
+.text-xs{
+	font-size: 0.75rem;
+  line-height: 1rem;
+}
 /* Media query for smaller screens */
 @media (max-width: 600px) {
   .form-container {

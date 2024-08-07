@@ -20,10 +20,10 @@ export default function LoginForm() {
 			type: 'password',
 			value: password,
 			required: true,
-/* 			link: {
+			link: {
 				linkText: 'Forgot password?',
 				linkUrl: '/password-reset',
-			}, */
+			}, 
 		},
 	];
 

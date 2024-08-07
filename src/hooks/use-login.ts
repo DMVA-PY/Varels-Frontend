@@ -1,10 +1,10 @@
 import { useState, ChangeEvent, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
-import { useAppDispatch } from '@/redux/hooks';
-import { useLoginMutation } from '@/redux/features/authApiSlice';
-import { setAuth } from '@/redux/features/authSlice';
 import { toast } from 'react-toastify';
 
+import { useLoginMutation } from '@/redux/features/authApiSlice';
+import { setAuth } from '@/redux/features/authSlice';
+import { useAppDispatch } from '@/redux/hooks';
 
 /* handles the login process  */
 export default function useLogin() {
@@ -21,7 +21,6 @@ export default function useLogin() {
 
 	const onChange = (event: ChangeEvent<HTMLInputElement>) => {
 		const { name, value } = event.target;
-
 		setFormData({ ...formData, [name]: value });
 	};
 
@@ -33,7 +32,7 @@ export default function useLogin() {
 			.then(() => {
 				dispatch(setAuth());
 				toast.success('Logged in');
-				router.push('/dashboard');
+				router.push('/');
 			})
 			.catch(() => {
 				toast.error('Failed to log in');

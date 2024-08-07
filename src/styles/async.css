@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+  }
+  
 .transition-soft {
     transition: all .3s ease
 }
@@ -2912,3 +2916,10 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     display: none;
   }
 }
+
+.component-clasu {
+    max-width: 100%;
+    overflow-x: hidden;
+    /* Add this line if there's any unintended negative margin */
+    margin-left: 0; 
+  }

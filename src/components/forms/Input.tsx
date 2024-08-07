@@ -26,22 +26,15 @@ export default function Input({
 }: Props) {
 	return (	
 		<div>
+
 			<div>
 				<label
 					htmlFor={labelId}
-					className='form-label'
+					className=''
 				>
 					{children}
 				</label>
-				{link && (
-					<div className='text-sm'>
-						<Link
-							href={link.linkUrl}
-						>
-							{link.linkText}
-						</Link>
-					</div>
-				)}
+		
 			</div>
 
 			<div className='mt-2 my-2'>
@@ -55,7 +48,16 @@ export default function Input({
 					required={required}
 				/>
 			</div>
-			
+					
+			{link && (
+					<div className='text-xs'>
+						<Link
+							href={link.linkUrl}
+						>
+							{link.linkText}
+						</Link>
+					</div>
+			)}
 		</div>
 	);
 }

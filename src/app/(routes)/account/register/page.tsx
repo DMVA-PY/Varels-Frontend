@@ -9,11 +9,18 @@ import { useRouter } from 'next/navigation'
 import Spinner from '/home/vare/project/farm_varels/Varels-Frontend/src/components/common/Spinner'
 import RegisterForm  from '/home/vare/project/farm_varels/Varels-Frontend/src/components/forms/RegisterForm';
 import { useRegister } from '@/hooks'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+	title: 'Varels | Register',
+	description: 'Varels register page',
+};
 
 const Page = () => {
 
   return (
     <div className="login-container">
+
         <div className="container">
           <section className="page-header py-4 " data-store="page-title">
             <div className="breadcrumbs ">

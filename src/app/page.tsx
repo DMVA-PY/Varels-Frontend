@@ -1,7 +1,12 @@
-'use client'
 import React from 'react'
 import Header from '/home/vare/project/farm_varels/Varels-Frontend/src/components/common/Header.jsx'
 import Image from 'next/image'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: "Varels | Home",
+  description: "Welcome to Varels clothing brand website"
+}
 
 const page = () => {
   return (

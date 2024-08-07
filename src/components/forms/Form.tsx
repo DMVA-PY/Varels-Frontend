@@ -30,7 +30,9 @@ export default function Form({
 	onSubmit,
 }: Props) {
 	return (
-		<form className='form-container'/*  method="post" data-store="account-login" */ onSubmit={onSubmit}>
+		<form 
+			className='form-container' /*  method="post" data-store="account-login" */ 
+			onSubmit={onSubmit}>
 			{config.map(input => (
 				<Input
 					key={input.labelId}

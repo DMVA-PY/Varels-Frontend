@@ -1,4 +1,5 @@
 import React from 'react'
+import '/home/vare/project/farm_varels/Varels-Frontend/src/styles/async.css'
 
 const CarritoSmart = ({isCarritoVisible, setIsCarritoVisible, toggleCarritoVisibility}) => {
   return (
@@ -13,7 +14,6 @@ const CarritoSmart = ({isCarritoVisible, setIsCarritoVisible, toggleCarritoVisib
         data-store="cart-form"
         >
         <div className="js-modal-close js-fullscreen-modal-close  modal-header  ">
-
             <div className="row no-gutters align-items-center">
                 <div className="col p-3 text-center">Carrito de compras </div>
                     <div className="col-auto">
@@ -48,6 +48,7 @@ const CarritoSmart = ({isCarritoVisible, setIsCarritoVisible, toggleCarritoVisib
         </div>
 
         <div className="modal-body h-100">
+
             <div className="js-ajax-cart-list"></div>
             <div className="js-empty-ajax-cart">
             <div
@@ -392,6 +393,7 @@ const CarritoSmart = ({isCarritoVisible, setIsCarritoVisible, toggleCarritoVisib
                 </div>
             </div>
             </div>
+            
         </div>
         
         </form>

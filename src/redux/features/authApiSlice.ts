@@ -18,10 +18,13 @@ interface CreateUserResponse {
 }
 
 const authApiSlice = apiSlice.injectEndpoints({
+
 	endpoints: (builder) => ({
+		
 		retrieveUser: builder.query<User, void>({
 			query: () => '/users/me/',
 		}),
+
 		socialAuthenticate: builder.mutation<CreateUserResponse, SocialAuthArgs>({
 			query: ({ provider, state, code }) => ({
 				url: `/o/${provider}/?state=${encodeURIComponent(
@@ -73,7 +76,7 @@ const authApiSlice = apiSlice.injectEndpoints({
 
 		activation: builder.mutation({
 			query: ({ uid, token }) => ({
-				url: '/account/activation/',
+				url: '/users/activation/',
 				method: 'POST',
 				body: { uid, token },
 			}),
@@ -109,3 +112,11 @@ export const {
 	useResetPasswordMutation,
 	useResetPasswordConfirmMutation,
 } = authApiSlice;
+
+/*
+	An API slice defines the logic for interacting with your backend, 
+	including the endpoints of your Django application. 
+	Specifically, when you create a slice using Redux Toolkit's createApi or createSlice, 
+	you're essentially connecting the frontend to the backend 
+	by specifying the endpoints and the methods (e.g., POST, GET) you want to use. 
+*/

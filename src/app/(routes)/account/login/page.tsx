@@ -2,8 +2,15 @@ import React from 'react'
 import '/home/vare/project/farm_varels/Varels-Frontend/src/app/(routes)/account/login/login.css' 
 import Link from 'next/link'
 import { LoginForm } from '@/components/forms'
+import { Metadata } from 'next';
 
-const page = () => {
+export const metadata: Metadata = {
+    title: 'Varels | Login',
+    description: 'Varels login page',
+};
+
+const Page = () => {
+
   return (
     <div className='login-container'>
 
@@ -723,4 +730,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

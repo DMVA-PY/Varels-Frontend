@@ -2,13 +2,14 @@ import { configureStore } from "@reduxjs/toolkit";
 import { useAppDispatch, useAppSelector } from "./hooks";
 import { apiSlice } from "./services/apiSlice";
 import authReducer from './features/authSlice'
-
+import carritoVisibilityReducer from './services/carritoVisibilitySlice';
 
 export const makeStore =()=>{
     return configureStore({
         reducer: {
             [apiSlice.reducerPath]: apiSlice.reducer,
             auth: authReducer,
+            carritoVisibilityReducer: carritoVisibilityReducer,
         },
 
         middleware: getDefaultMiddleware =>

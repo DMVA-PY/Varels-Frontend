@@ -3,13 +3,15 @@ import { useAppDispatch, useAppSelector } from "./hooks";
 import { apiSlice } from "./services/apiSlice";
 import authReducer from './features/authSlice'
 import carritoVisibilityReducer from './services/carritoVisibilitySlice';
+import userReducer from "./features/userSlice";
 
 export const makeStore =()=>{
     return configureStore({
         reducer: {
             [apiSlice.reducerPath]: apiSlice.reducer,
             auth: authReducer,
-            carritoVisibilityReducer: carritoVisibilityReducer,
+            user: userReducer,
+            carritoVisibility: carritoVisibilityReducer,
         },
 
         middleware: getDefaultMiddleware =>

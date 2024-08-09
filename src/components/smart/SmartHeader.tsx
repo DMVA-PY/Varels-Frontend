@@ -1,6 +1,10 @@
 'use client'
 import React, { useState } from 'react'
 import Link from 'next/link'
+
+import { useSelector } from 'react-redux';
+import { RootState } from '@/redux/store';
+
 import Carrito from '/home/vare/project/farm_varels/Varels-Frontend/src/components/common/Carrito.jsx';
 import CookieBanner from '/home/vare/project/farm_varels/Varels-Frontend/src/components/common/CookieBanner.jsx'
 import CarritoSmart from '../common/CarritoSmart';
@@ -9,7 +13,7 @@ import "/home/vare/project/farm_varels/Varels-Frontend/src/styles/async.css"
 import "/home/vare/project/farm_varels/Varels-Frontend/src/styles/critical.css"
 
 const SmartHeader = ({isVisible, toggleVisibility}) => {
-  
+
   return (
     <div>
         <>
@@ -616,7 +620,7 @@ const SmartHeader = ({isVisible, toggleVisibility}) => {
                         href="https://barnesindustries.com.ar/account/login/"
                         title=""
                       >
-                        Iniciar sesión
+                        Iniciar sesion
                       </a>
                       <span className="mx-1">/</span>
                       <a

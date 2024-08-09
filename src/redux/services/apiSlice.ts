@@ -7,8 +7,6 @@ import type {
 } from '@reduxjs/toolkit/query'
 import { setAuth, logout } from '../features/authSlice'
 
-console.log('NEXT_PUBLIC_HOST: ', process.env.NEXT_PUBLIC_HOST)
-
 const mutex = new Mutex()
   
 const baseQuery = fetchBaseQuery({ 
@@ -21,7 +19,6 @@ const baseQueryWithReauth: BaseQueryFn<
   unknown,
   FetchBaseQueryError
 > = async (args, api, extraOptions) => {
-
 
   await mutex.waitForUnlock()
   
@@ -65,3 +62,19 @@ export const apiSlice = createApi({
     endpoints: builder => ({}),
 })  
 
+
+/*
+This setup ensures that your frontend can seamlessly interact with your Django backend, 
+handling authentication and reauthentication as needed. 
+*/
+
+/* 
+apiSlice.ts file defines your connection to the Django backend 
+using Redux Toolkit's createApi and fetchBaseQuery functions
+*/
+
+/* 
+apiSlice is created using createApi. 
+This slice will handle the API requests made to your Django backend, 
+automatically managing things like caching, request deduplication, and query state management.
+*/

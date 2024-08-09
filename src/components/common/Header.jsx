@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import Carrito from '/home/vare/project/farm_varels/Varels-Frontend/src/components/common/Carrito.jsx';
 import CookieBanner from '/home/vare/project/farm_varels/Varels-Frontend/src/components/common/CookieBanner.jsx'
-import SmartHeader from '/home/vare/project/farm_varels/Varels-Frontend/src/components/smart/SmartHeader.jsx'
+import SmartHeader from '/home/vare/project/farm_varels/Varels-Frontend/src/components/smart/SmartHeader.tsx'
 
 import "/home/vare/project/farm_varels/Varels-Frontend/src/styles/async.css"
 import "/home/vare/project/farm_varels/Varels-Frontend/src/styles/critical.css"

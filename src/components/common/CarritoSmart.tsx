@@ -14,7 +14,7 @@ const CarritoSmart = () => {
       dispatch(toggleCarritoVisibility());
     };
 
-    const isCarritoVisible = useSelector((state: RootState) => state.carritoVisibilityReducer.isCarritoVisible);
+    const isCarritoVisible = useSelector((state: RootState) => state.carritoVisibility.isCarritoVisible);
 
     return (
         <div

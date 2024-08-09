@@ -2,10 +2,13 @@ import { useState, ChangeEvent, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
 import { useRegisterMutation } from '@/redux/features/authApiSlice';
 import { toast } from 'react-toastify';
-
+import { useDispatch } from 'react-redux';
+import { setUser } from '@/redux/features/userSlice';
 
 export default function useRegister() {
+
 	const router = useRouter();
+	const dispatch = useDispatch();
 	const [register, { isLoading }] = useRegisterMutation();
 
 	const [formData, setFormData] = useState({
@@ -53,6 +56,7 @@ export default function useRegister() {
 		register({ first_name, last_name, email, password, re_password })
 			.unwrap()
 			.then(() => {
+				dispatch(setUser({ first_name: first_name, last_name: last_name }));
 				toast.success('Please check your email to verify your account');
 				router.push('/account/login');
 			})

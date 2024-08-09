@@ -1,4 +1,6 @@
 import { apiSlice } from '../services/apiSlice';
+import { setAuth } from './authSlice';
+import { setUser } from './userSlice';
 
 interface User {
 	first_name: string;
@@ -38,14 +40,32 @@ const authApiSlice = apiSlice.injectEndpoints({
 			}),
 		}),
 
-		login: builder.mutation({
+		/* real login mutation */
+/* 		login: builder.mutation({
 			query: ({ email, password }) => ({
 				url: '/jwt/create/',
 				method: 'POST',
 				body: { email, password },
 			}),
+		}), */
+		login: builder.mutation({
+			query: ({ email, password }) => ({
+			  url: '/jwt/create/',
+			  method: 'POST',
+			  body: { email, password },
+			}),
+			async onQueryStarted(args, { dispatch, queryFulfilled }) {
+			  try {
+				const { data } = await queryFulfilled;
+				const { access, first_name } = data;
+				dispatch(setAuth()); // Set authentication status
+				dispatch(setUser({ first_name })); // Set user info
+				// Optionally store the tokens in local storage or cookies
+			  } catch (error) {
+				console.log(error);
+			  }
+			},
 		}),
-
 		register: builder.mutation({
 			query: ({
 				first_name,

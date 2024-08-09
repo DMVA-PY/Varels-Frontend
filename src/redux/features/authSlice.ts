@@ -15,7 +15,7 @@ const authSlice = createSlice({
     initialState,
     
     reducers: {
-        setAuth: (state, action) => {
+        setAuth: (state) => {
           state.isAuthenticated = true;
         },
         logout: (state) => {
@@ -29,6 +29,8 @@ const authSlice = createSlice({
 
 export const { setAuth, logout, finishInitialLoad } = authSlice.actions;
 export default authSlice.reducer;
+
+/* This slice will handle authentication status, such as whether the user is logged in. */
 
 /* authSlice defines how to handle authentication-related state updates in your Redux store. 
 It sets up actions to manage authentication status and loading state, and provides a clear and structured way to manage this part of your application's state. */

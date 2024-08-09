@@ -8,10 +8,10 @@ import userReducer from "./features/userSlice";
 export const makeStore =()=>{
     return configureStore({
         reducer: {
+            carritoVisibility: carritoVisibilityReducer,
             [apiSlice.reducerPath]: apiSlice.reducer,
             auth: authReducer,
             user: userReducer,
-            carritoVisibility: carritoVisibilityReducer,
         },
 
         middleware: getDefaultMiddleware =>

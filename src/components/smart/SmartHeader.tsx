@@ -12,7 +12,15 @@ import CarritoSmart from '../common/CarritoSmart';
 import "/home/vare/project/farm_varels/Varels-Frontend/src/styles/async.css"
 import "/home/vare/project/farm_varels/Varels-Frontend/src/styles/critical.css"
 
-const SmartHeader = ({isVisible, toggleVisibility}) => {
+interface SmartHeaderProps {
+  isVisible: boolean;
+  toggleVisibility: () => void;
+}
+
+const SmartHeader = ({ isVisible, toggleVisibility }: SmartHeaderProps)=> {
+  const first_name = useSelector((state: any) => state.user.first_name);
+  const isAuthenticated = useSelector((state: any) => state.auth.isAuthenticated);
+
 
   return (
     <div>
@@ -620,14 +628,13 @@ const SmartHeader = ({isVisible, toggleVisibility}) => {
                         href="https://barnesindustries.com.ar/account/login/"
                         title=""
                       >
-                        Iniciar sesion
+                        { !isAuthenticated ? "Iniciar Sesion" : `Hola, ${first_name}!` }
                       </a>
                       <span className="mx-1">/</span>
                       <a
-                        href="https://barnesindustries.com.ar/account/register"
                         title=""
                       >
-                        Crear cuenta
+                        { !isAuthenticated ? "Crear cuenta" : `Cerrar sesion` }
                       </a>
                     </span>
                   </div>
